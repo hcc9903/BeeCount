@@ -1,0 +1,2375 @@
+{
+  "@@locale": "zh",
+  "appTitle": "蜜蜂记账",
+  "tabHome": "明细",
+  "tabAnalytics": "图表",
+  "tabMine": "我的",
+  "commonCancel": "取消",
+  "commonConfirm": "确定",
+  "commonSave": "保存",
+  "commonDelete": "删除",
+  "commonAdd": "添加",
+  "commonEdit": "编辑",
+  "commonMore": "更多",
+  "commonOk": "确定",
+  "commonKnow": "知道了",
+  "commonNo": "否",
+  "commonEmpty": "暂无数据",
+  "commonError": "错误",
+  "commonSuccess": "成功",
+  "commonFailed": "失败",
+  "commonBack": "返回",
+  "commonNext": "下一步",
+  "fabActionCamera": "拍照",
+  "fabActionGallery": "相册",
+  "fabActionVoice": "语音",
+  "fabActionVoiceDisabled": "需要启用AI并配置API Key",
+  "voiceRecordingTitle": "语音记账",
+  "voiceRecordingPreparing": "准备录音...",
+  "voiceRecordingInProgress": "正在录音...",
+  "voiceRecordingProcessing": "正在识别...",
+  "voiceRecordingDuration": "录音时长: {duration}秒",
+  "@voiceRecordingDuration": {
+    "placeholders": {
+      "duration": {
+        "type": "int"
+      }
+    }
+  },
+  "voiceRecordingSuccess": "语音记账成功",
+  "voiceRecordingNoLedger": "未找到当前账本",
+  "voiceRecordingNoInfo": "未识别到记账信息",
+  "voiceRecordingPermissionDenied": "需要麦克风权限才能录音",
+  "voiceRecordingPermissionDeniedTitle": "需要麦克风权限",
+  "voiceRecordingPermissionDeniedMessage": "语音记账功能需要使用麦克风权限。请在系统设置中允许蜜蜂记账访问麦克风。",
+  "voiceRecordingStartFailed": "启动录音失败: {error}",
+  "@voiceRecordingStartFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceRecordingFailed": "录音失败: {error}",
+  "@voiceRecordingFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceRecordingRecognizeFailed": "识别失败: {error}",
+  "@voiceRecordingRecognizeFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceRecordingNoInfoDetected": "未能识别账单信息: {text}",
+  "@voiceRecordingNoInfoDetected": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceRecordingNoSpeech": "未检测到语音输入",
+  "commonPrevious": "上一步",
+  "commonFinish": "完成",
+  "commonClose": "关闭",
+  "commonSearch": "搜索",
+  "commonNoteHint": "备注…",
+  "commonSettings": "设置",
+  "commonGoSettings": "前往设置",
+  "commonLanguage": "语言",
+  "commonWeekdayMonday": "星期一",
+  "commonWeekdayTuesday": "星期二",
+  "commonWeekdayWednesday": "星期三",
+  "commonWeekdayThursday": "星期四",
+  "commonWeekdayFriday": "星期五",
+  "commonWeekdaySaturday": "星期六",
+  "commonWeekdaySunday": "星期日",
+  "commonCurrent": "当前",
+  "commonTutorial": "教程",
+  "commonConfigure": "配置",
+  "commonPressAgainToExit": "再按一次退出应用",
+  "homeIncome": "收入",
+  "homeExpense": "支出",
+  "homeBalance": "结余",
+  "homeNoRecords": "还没有记账",
+  "homeSelectDate": "选择日期",
+  "homeAppTitle": "蜜蜂记账",
+  "homeSearch": "搜索",
+  "homeYear": "{year}年",
+  "homeMonth": "{month}月",
+  "homeNoRecordsSubtext": "点击底部加号，马上记一笔",
+  "homeLastMonthReportSubtitle": "查看上月消费报告并分享",
+  "homeLastMonthReportView": "查看",
+  "homeAnnualReportReminder": "{year}年度账单已生成，回顾你的财务足迹",
+  "@homeAnnualReportReminder": {
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "homeAnnualReportView": "查看",
+  "widgetTodayExpense": "今日支出",
+  "widgetTodayIncome": "今日收入",
+  "widgetMonthExpense": "本月支出",
+  "widgetMonthIncome": "本月收入",
+  "widgetMonthSuffix": "月",
+  "searchTitle": "搜索",
+  "searchHint": "搜索备注、分类或金额...",
+  "searchCategoryHint": "搜索分类名称...",
+  "searchMinAmount": "最小金额",
+  "searchMaxAmount": "最大金额",
+  "searchNoInput": "输入关键词开始搜索",
+  "searchNoResults": "未找到匹配的结果",
+  "searchBatchMode": "批量操作",
+  "searchBatchModeWithCount": "批量操作 ({selected}/{total})",
+  "@searchBatchModeWithCount": {
+    "placeholders": {
+      "selected": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "searchExitBatchMode": "退出批量操作",
+  "searchSelectAll": "全选",
+  "searchDeselectAll": "取消全选",
+  "searchSelectedCount": "已选择 {count} 项",
+  "@searchSelectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchBatchSetNote": "设置备注",
+  "searchBatchChangeCategory": "调整分类",
+  "searchBatchDeleteConfirmTitle": "确认删除",
+  "searchBatchDeleteConfirmMessage": "确定要删除选中的 {count} 笔记账吗?\n此操作无法撤销。",
+  "@searchBatchDeleteConfirmMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchBatchSetNoteTitle": "批量设置备注",
+  "searchBatchSetNoteMessage": "将为选中的 {count} 笔记账设置相同的备注",
+  "@searchBatchSetNoteMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchBatchSetNoteHint": "输入备注内容 (留空则清空备注)",
+  "searchBatchDeleteSuccess": "成功删除 {count} 笔记账",
+  "@searchBatchDeleteSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchBatchDeleteFailed": "删除失败: {error}",
+  "@searchBatchDeleteFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "searchBatchSetNoteSuccess": "成功为 {count} 笔记账设置备注",
+  "@searchBatchSetNoteSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchBatchSetNoteFailed": "设置备注失败: {error}",
+  "@searchBatchSetNoteFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "searchBatchChangeCategorySuccess": "成功为 {count} 笔记账调整分类",
+  "@searchBatchChangeCategorySuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchBatchChangeCategoryFailed": "调整分类失败: {error}",
+  "@searchBatchChangeCategoryFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "searchResultsCount": "共 {count} 条结果",
+  "@searchResultsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchFilterTitle": "筛选",
+  "searchAmountFilter": "金额筛选",
+  "searchDateFilter": "时间筛选",
+  "searchStartDate": "开始日期",
+  "searchEndDate": "结束日期",
+  "searchNotSet": "未设置",
+  "searchClearFilter": "清空筛选",
+  "searchBatchCategoryTransferError": "选中的交易包含转账，无法修改分类",
+  "searchBatchCategoryTypeError": "选中的交易类型不一致，请选择全部为收入或全部为支出的交易",
+  "searchDateStart": "开始",
+  "searchDateEnd": "结束",
+  "analyticsMonth": "月",
+  "analyticsYear": "年",
+  "analyticsAll": "全部",
+  "analyticsCategoryRanking": "分类排行",
+  "analyticsNoDataSubtext": "可左右滑动切换周期，或点击按钮切换收入/支出",
+  "analyticsSwipeHint": "左右滑动切换周期",
+  "analyticsSwitchTo": "切换到{type}",
+  "analyticsTipHeader": "提示：顶部胶囊可切换 月/年/全部",
+  "analyticsSwipeToSwitch": "横滑切换",
+  "analyticsAllYears": "全部年份",
+  "analyticsToday": "今天",
+  "splashAppName": "蜜蜂记账",
+  "splashSlogan": "一笔一蜜",
+  "splashSecurityTitle": "开源数据安全",
+  "splashSecurityFeature1": "• 数据本地存储，隐私完全自控",
+  "splashSecurityFeature2": "• 开源代码透明，安全值得信赖",
+  "splashSecurityFeature3": "• 可选云端同步，多设备数据一致",
+  "splashInitializing": "正在初始化数据...",
+  "ledgersTitle": "账本管理",
+  "ledgersNew": "新建账本",
+  "ledgersClear": "清空账本",
+  "ledgersClearMessage": "确定要清空账本\"{name}\"的所有账单吗？此操作不可恢复。\\n账本本身会保留，仅删除账单数据。",
+  "ledgerDefaultName": "默认账本",
+  "ledgersEdit": "编辑账本",
+  "ledgersDelete": "删除账本",
+  "ledgersDeleteConfirm": "删除账本",
+  "ledgersDeleteMessage": "确定要删除该账本及其全部记录吗？此操作不可恢复。\\n若云端存在备份，也会一并删除。",
+  "ledgersDeleted": "已删除",
+  "ledgersDeleteFailed": "删除失败",
+  "ledgersClearTitle": "清空账本",
+  "@ledgersClearMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersClearSuccess": "账本已清空",
+  "ledgersDeleteLocal": "仅删除本地账本",
+  "ledgersDeleteLocalTitle": "删除本地账本",
+  "ledgersDeleteLocalMessage": "确定要删除本地账本\"{name}\"吗？\\n云端备份会保留，您可以随时恢复。",
+  "@ledgersDeleteLocalMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersDeleteLocalSuccess": "本地账本已删除",
+  "ledgersName": "名称",
+  "ledgersDefaultLedgerName": "默认账本",
+  "ledgersCurrency": "币种",
+  "ledgersSelectCurrency": "选择币种",
+  "ledgersSearchCurrency": "搜索：中文或代码",
+  "ledgersCreate": "创建",
+  "ledgersActions": "操作",
+  "ledgersRecords": "笔数：{count}",
+  "ledgersBalance": "余额：{balance}",
+  "ledgerCardDownloadCloud": "下载云账本",
+  "categoryTitle": "分类管理",
+  "categoryNew": "新建分类",
+  "categoryExpense": "支出",
+  "categoryIncome": "收入",
+  "categoryEmpty": "暂无分类",
+  "categoryDefault": "默认分类",
+  "categoryReorderTip": "长按分类可拖拽调整顺序",
+  "categoryLoadFailed": "加载失败: {error}",
+  "iconPickerTitle": "选择图标",
+  "iconCategoryTransport": "交通",
+  "iconCategoryShopping": "购物",
+  "iconCategoryEntertainment": "娱乐",
+  "iconCategoryLife": "生活",
+  "iconCategoryHealth": "健康",
+  "iconCategoryEducation": "学习",
+  "iconCategoryWork": "工作",
+  "iconCategoryFinance": "理财",
+  "iconCategoryReward": "奖励",
+  "iconCategoryOther": "其他",
+  "importTitle": "导入账单",
+  "importBillType": "账单类型",
+  "importBillTypeGeneric": "通用CSV",
+  "importBillTypeAlipay": "支付宝",
+  "importBillTypeWechat": "微信",
+  "importChooseFile": "选择文件",
+  "importNoFileSelected": "未选择文件",
+  "importHint": "提示：请选择一个文件开始导入（支持 CSV/TSV/XLSX）",
+  "importReading": "读取文件中…",
+  "importPreparing": "准备中…",
+  "importFileOpenError": "无法打开文件选择器：{error}",
+  "mineTitle": "我的",
+  "mineReminder": "提醒设置",
+  "mineImport": "导入数据",
+  "mineExport": "导出数据",
+  "mineCloud": "云服务",
+  "mineUpdate": "检查更新",
+  "mineLanguageSettings": "语言设置",
+  "languageTitle": "语言设置",
+  "languageChinese": "中文",
+  "languageEnglish": "English",
+  "languageSystemDefault": "跟随系统",
+  "deleteConfirmTitle": "删除确认",
+  "deleteConfirmMessage": "确定要删除这条记账吗？",
+  "mineSlogan": "蜜蜂记账，一笔一蜜",
+  "mineAvatarTitle": "头像设置",
+  "mineAvatarFromGallery": "从相册选择",
+  "mineAvatarFromCamera": "拍照",
+  "mineAvatarDelete": "删除头像",
+  "annualReportTitle": "年度账单",
+  "annualReportSubtitle": "回顾你的{year}年财务足迹",
+  "@annualReportSubtitle": {
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "annualReportEntrySubtitle": "生成专属年度报告，分享你的记账故事",
+  "annualReportNoData": "暂无{year}年数据",
+  "@annualReportNoData": {
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "annualReportPage1Title": "年度总览",
+  "annualReportPage1Subtitle": "{year}年记账之旅",
+  "@annualReportPage1Subtitle": {
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "annualReportTotalDays": "记账天数",
+  "annualReportTotalRecords": "记账笔数",
+  "annualReportTotalIncome": "总收入",
+  "annualReportTotalExpense": "总支出",
+  "annualReportNetSavings": "年度结余",
+  "annualReportPage2Title": "支出分析",
+  "annualReportPage2Subtitle": "你的钱花在哪了",
+  "annualReportPage3Title": "月度趋势",
+  "annualReportPage3Subtitle": "12个月的收支变化",
+  "annualReportHighestMonth": "支出最高月份",
+  "annualReportLowestMonth": "支出最低月份",
+  "annualReportPage4Title": "特别时刻",
+  "annualReportPage4Subtitle": "那些值得铭记的账单",
+  "annualReportLargestExpense": "年度最大支出",
+  "annualReportLargestIncome": "年度最大收入",
+  "annualReportFirstRecord": "第一笔记录",
+  "annualReportPage5Title": "年度成就",
+  "annualReportPage5Subtitle": "你的记账成就徽章",
+  "annualReportAchievementConsistent": "持之以恒",
+  "annualReportAchievementConsistentDesc": "连续记账超过{days}天",
+  "@annualReportAchievementConsistentDesc": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "annualReportAchievementSaver": "精打细算",
+  "annualReportAchievementSaverDesc": "年度结余为正",
+  "annualReportAchievementDetail": "明察秋毫",
+  "annualReportAchievementDetailDesc": "记账笔数超过{count}笔",
+  "@annualReportAchievementDetailDesc": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "annualReportShareButton": "生成分享海报",
+  "annualReportGenerating": "正在生成年度报告...",
+  "annualReportSaveSuccess": "年度报告海报已保存",
+  "mineShareApp": "分享应用",
+  "mineShareWithFriends": "和好友分享蜜蜂记账",
+  "mineCopyPromoText": "复制推广文案",
+  "mineCopyPromoSubtitle": "一键复制分享给好友",
+  "mineShareGenerating": "正在生成分享海报...",
+  "sharePosterAppName": "蜜蜂记账",
+  "sharePosterSlogan": "一笔一蜜，记录美好生活",
+  "sharePosterFeature1": "数据安全·你做主",
+  "sharePosterFeature2": "完全开源·可审计",
+  "sharePosterFeature3": "AI智能记账·图片语音",
+  "sharePosterFeature4": "拍照记账·自动识别",
+  "sharePosterFeature5": "多账本·暗黑模式",
+  "sharePosterFeature6": "自建云同步·永久免费",
+  "sharePosterScanText": "扫码访问开源项目",
+  "appPromoTagOpenSource": "开源",
+  "appPromoTagFree": "免费",
+  "appPromoFooterText": "让每一笔都有迹可循",
+  "userProfileJourneyYears": "记账达人 {years} 年",
+  "@userProfileJourneyYears": {
+    "placeholders": {
+      "years": {
+        "type": "int"
+      }
+    }
+  },
+  "userProfileJourneyOneYear": "记账满一年",
+  "userProfileJourneyHalfYear": "坚持记账半年",
+  "userProfileJourneyThreeMonths": "记账三个月",
+  "userProfileJourneyOneMonth": "记账满一个月",
+  "userProfileJourneyOneWeek": "记账一周",
+  "userProfileJourneyStart": "开始记账之旅",
+  "userProfileDailyAverage": "日均记账",
+  "sharePosterSave": "保存到相册",
+  "sharePosterShare": "分享",
+  "sharePosterHideIncome": "隐藏收入",
+  "sharePosterShowIncome": "显示收入",
+  "sharePosterSaveSuccess": "已保存到相册",
+  "shareGuidanceCopyText": "用蜜蜂记账记录生活，开源免费无广告！🐝 下载地址：https://github.com/TNT-Likely/BeeCount",
+  "shareGuidanceCopied": "文案已复制",
+  "sharePosterSaveFailed": "保存失败",
+  "sharePosterPermissionDenied": "相册权限被拒绝，请在设置中开启",
+  "sharePosterGenerating": "生成中...",
+  "sharePosterGenerateFailed": "生成海报失败，请重试",
+  "sharePosterNoLedger": "请先选择一个账本",
+  "sharePosterYearTitle": "我的记账年度报告",
+  "sharePosterYearSubtitle": "用数据记录生活 用理性规划未来",
+  "sharePosterMonthTitle": "月度账单报告",
+  "sharePosterMonthSubtitle": "精打细算 理性消费",
+  "sharePosterLedgerTitle": "账本统计报告",
+  "sharePosterRecordDays": "记账天数",
+  "sharePosterRecordCount": "记账笔数",
+  "sharePosterTotalExpense": "总支出",
+  "sharePosterTotalIncome": "总收入",
+  "sharePosterYearBalance": "年度结余",
+  "sharePosterYearDeficit": "年度赤字",
+  "sharePosterMonthBalance": "月度结余",
+  "sharePosterBalance": "总结余",
+  "sharePosterAvgMonthlyExpense": "月均支出",
+  "sharePosterAvgMonthlyIncome": "月均收入",
+  "sharePosterAvgDailyExpense": "日均支出",
+  "sharePosterMaxExpenseMonth": "支出最高月份",
+  "sharePosterTopExpense": "TOP 3 支出",
+  "sharePosterCompareLastMonth": "环比上月",
+  "sharePosterIncreaseRate": "较上月增长",
+  "sharePosterDecreaseRate": "较上月减少",
+  "sharePosterSavedMoneyTitle": "恭喜！本月比上月省了",
+  "sharePosterLedgerName": "账本名称",
+  "sharePosterUnitDay": "天",
+  "sharePosterUnitCount": "笔",
+  "sharePosterUnitYuan": "元",
+  "userProfilePosterStartDate": "记账始于 {date}",
+  "@userProfilePosterStartDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "userProfilePosterRecordDays": "记账天数",
+  "userProfilePosterDaysUnit": "天",
+  "userProfilePosterRecordCount": "记账笔数",
+  "userProfilePosterCountUnit": "笔",
+  "userProfilePosterLedgerCount": "账本数量",
+  "userProfilePosterLedgerUnit": "本",
+  "mineDaysCount": "记账天数",
+  "mineTotalRecords": "总笔数",
+  "mineCurrentBalance": "当前余额",
+  "mineCloudService": "云服务",
+  "mineCloudServiceLoading": "加载中…",
+  "mineCloudServiceOffline": "默认模式 (离线)",
+  "mineCloudServiceCustom": "自定义 Supabase",
+  "mineCloudServiceWebDAV": "自定义云服务 (WebDAV)",
+  "mineSyncTitle": "同步",
+  "mineSyncNotLoggedIn": "未登录",
+  "mineSyncNotConfigured": "未配置云端",
+  "mineSyncNoRemote": "云端暂无备份",
+  "mineSyncInSync": "已同步 (本地{count}条)",
+  "mineSyncInSyncSimple": "已同步",
+  "mineSyncLocalNewer": "本地较新 (本地{count}条, 建议上传)",
+  "mineSyncLocalNewerSimple": "本地较新",
+  "mineSyncCloudNewer": "云端较新 (建议下载并合并)",
+  "mineSyncCloudNewerSimple": "云端较新",
+  "mineSyncDifferent": "本地与云端不同步",
+  "mineSyncError": "状态获取失败",
+  "mineSyncDetailTitle": "同步状态详情",
+  "mineSyncLocalRecords": "本地记录数: {count}",
+  "mineSyncCloudRecords": "云端记录数: {count}",
+  "mineSyncCloudLatest": "云端最新记账时间: {time}",
+  "mineSyncLocalFingerprint": "本地指纹: {fingerprint}",
+  "mineSyncCloudFingerprint": "云端指纹: {fingerprint}",
+  "mineSyncMessage": "说明: {message}",
+  "mineUploadTitle": "上传",
+  "mineUploadNeedLogin": "需登录",
+  "mineUploadNeedCloudService": "仅限云服务模式可用",
+  "mineUploadInProgress": "正在上传中…",
+  "mineUploadRefreshing": "刷新中…",
+  "mineUploadSynced": "已同步",
+  "mineUploadSuccess": "已上传",
+  "mineUploadSuccessMessage": "当前账本已同步到云端",
+  "mineDownloadTitle": "下载",
+  "mineDownloadNeedCloudService": "仅限云服务模式可用",
+  "mineDownloadComplete": "完成",
+  "mineDownloadResult": "新增导入：{inserted} 条",
+  "mineLoginTitle": "登录 / 注册",
+  "mineLoginSubtitle": "仅在同步时需要",
+  "mineLoggedInEmail": "已登录",
+  "mineLogoutSubtitle": "点击可退出登录",
+  "mineLogoutConfirmTitle": "退出登录",
+  "mineLogoutConfirmMessage": "确定要退出当前账号登录吗？\n退出后将无法使用云同步功能。",
+  "mineLogoutButton": "退出",
+  "mineAutoSyncTitle": "自动同步账本",
+  "mineAutoSyncSubtitle": "记账后自动上传到云端",
+  "mineAutoSyncNeedLogin": "需登录后可开启",
+  "mineImportProgressTitle": "后台导入中…",
+  "mineImportProgressSubtitle": "进度：{done}/{total}，成功 {ok}，失败 {fail}",
+  "mineImportCompleteTitle": "导入完成",
+  "mineCategoryManagement": "分类管理",
+  "mineCategoryManagementSubtitle": "编辑自定义分类",
+  "mineCategoryMigration": "分类迁移",
+  "mineCategoryMigrationSubtitle": "将分类数据迁移到其他分类",
+  "mineRecurringTransactions": "周期账单",
+  "mineRecurringTransactionsSubtitle": "管理周期性账单",
+  "mineReminderSettings": "记账提醒",
+  "mineReminderSettingsSubtitle": "设置每日记账提醒",
+  "minePersonalize": "个性装扮",
+  "mineDisplayScale": "显示缩放",
+  "mineDisplayScaleSubtitle": "调整文字和界面元素大小",
+  "mineCheckUpdate": "检测更新",
+  "mineCheckUpdateSubtitle": "正在检查最新版本",
+  "mineUpdateDownload": "下载更新",
+  "mineFeedback": "问题反馈",
+  "mineFeedbackSubtitle": "提交问题或建议",
+  "mineHelp": "使用帮助",
+  "mineHelpSubtitle": "查看使用文档和常见问题",
+  "mineSupportAuthor": "给项目 Star ⭐️",
+  "mineSupportAuthorSubtitle": "开源免费，已有 {count} 人 Star",
+  "@mineSupportAuthorSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "githubStarGuideTitle": "如何给项目 Star",
+  "githubStarGuideContent": "点击下方按钮打开 GitHub 页面后，点击图中标注的位置即可完成 Star",
+  "githubStarGuideButton": "前往 GitHub",
+  "categoryEditTitle": "编辑分类",
+  "categoryNewTitle": "新建分类",
+  "categoryDetailTooltip": "分类详情",
+  "categoryMigrationTooltip": "分类迁移",
+  "categoryMigrationTitle": "分类迁移",
+  "categoryMigrationDescription": "分类迁移说明",
+  "categoryMigrationDescriptionContent": "• 将指定分类的所有交易记录迁移到另一个分类\n• 迁移后，原分类的交易数据将全部转移到目标分类\n• 此操作不可撤销，请谨慎选择",
+  "categoryMigrationTypeLabel": "选择类型",
+  "categoryMigrationFromLabel": "迁出分类",
+  "categoryMigrationFromHint": "选择要迁出的分类",
+  "categoryMigrationToLabel": "迁入分类",
+  "categoryMigrationToHint": "选择迁入的分类",
+  "categoryMigrationToHintFirst": "请先选择迁出分类",
+  "categoryMigrationStartButton": "开始迁移",
+  "categoryMigrationCannotTitle": "无法迁移",
+  "categoryMigrationCannotMessage": "选择的分类无法进行迁移，请检查分类状态。",
+  "categoryExpenseType": "支出分类",
+  "categoryIncomeType": "收入分类",
+  "categoryDefaultTitle": "默认分类",
+  "categoryNameLabel": "分类名称",
+  "categoryNameHint": "请输入分类名称",
+  "categoryNameRequired": "请输入分类名称",
+  "categoryNameTooLong": "分类名称不能超过4个字",
+  "categoryNameDuplicate": "分类名称已存在",
+  "categoryIconLabel": "分类图标",
+  "categoryCustomIconTitle": "自定义图标",
+  "categoryCustomIconTapToSelect": "点击选择图片",
+  "categoryCustomIconTapToChange": "点击更换图片",
+  "categoryCustomIconError": "选择图片时出错",
+  "categoryCustomIconRequired": "请选择自定义图标图片",
+  "categoryCustomIconCrop": "裁剪图标",
+  "categoryDangerousOperations": "危险操作",
+  "categoryDeleteTitle": "删除分类",
+  "categoryDeleteSubtitle": "删除后无法恢复",
+  "categorySaveError": "保存失败",
+  "categoryUpdated": "分类\"{name}\"已更新",
+  "categoryCreated": "分类\"{name}\"已创建",
+  "categoryCannotDelete": "无法删除",
+  "categoryCannotDeleteMessage": "该分类下还有 {count} 笔交易记录，请先处理这些记录。",
+  "categoryShare": "分享分类",
+  "categoryImport": "导入分类",
+  "categoryClearUnused": "清空未使用分类",
+  "categoryClearUnusedTitle": "清空未使用分类",
+  "categoryClearUnusedMessage": "确定要删除 {count} 个未使用的分类吗？此操作无法撤销。",
+  "@categoryClearUnusedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "categoryClearUnusedListTitle": "将被删除的分类：",
+  "categoryClearUnusedEmpty": "没有未使用的分类",
+  "categoryClearUnusedSuccess": "已删除 {count} 个分类",
+  "@categoryClearUnusedSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "categoryClearUnusedFailed": "清空失败",
+  "categoryShareScopeTitle": "选择分享范围",
+  "categoryShareScopeExpense": "仅支出分类",
+  "categoryShareScopeIncome": "仅收入分类",
+  "categoryShareScopeAll": "全部分类",
+  "categoryShareSuccess": "已保存到 {path}",
+  "@categoryShareSuccess": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "categoryShareSubject": "BeeCount 分类配置",
+  "categoryShareFailed": "分享失败",
+  "categoryImportInvalidFile": "请选择分类包文件（.zip）",
+  "categoryImportNoCategories": "文件中没有分类数据",
+  "categoryImportModeTitle": "选择导入模式",
+  "categoryImportModeMerge": "合并",
+  "categoryImportModeMergeDesc": "保留现有分类，新增不存在的",
+  "categoryImportModeOverwrite": "覆盖",
+  "categoryImportModeOverwriteDesc": "清空未使用分类后导入",
+  "categoryImportSuccess": "导入成功",
+  "categoryImportSuccessDetail": "已导入 {imported} 个分类，跳过 {skipped} 个，导入 {icons} 个图标",
+  "@categoryImportSuccessDetail": {
+    "placeholders": {
+      "imported": {"type": "int"},
+      "skipped": {"type": "int"},
+      "icons": {"type": "int"}
+    }
+  },
+  "categoryImportFailed": "导入失败",
+  "categoryDeleteConfirmTitle": "删除分类",
+  "categoryDeleteConfirmMessage": "确定要删除分类\"{name}\"吗？此操作无法撤销。",
+  "categoryDeleteError": "删除失败",
+  "categoryDeleted": "分类\"{name}\"已删除",
+  "categorySubCategoryTitle": "二级分类",
+  "categorySubCategoryDescriptionEnabled": "此分类属于某个一级分类",
+  "categorySubCategoryDescriptionDisabled": "此分类为独立的一级分类",
+  "categoryParentCategoryTitle": "父分类",
+  "categoryParentCategoryHint": "请选择父分类",
+  "categorySelectParentTitle": "选择父分类",
+  "categorySubCategoryCreated": "已添加二级分类：{name}",
+  "categoryParentRequired": "请选择父分类",
+  "categoryParentRequiredTitle": "错误",
+  "categoryExpenseList": "餐饮-交通-购物-娱乐-居家-家庭-通讯-水电-住房-医疗-教育-宠物-运动-数码-旅行-烟酒-母婴-美容-维修-社交-学习-汽车-打车-地铁-外卖-物业-停车-捐赠-送礼-纳税-饮料-服装-零食-发红包-水果-游戏-书-爱人-装修-日用品-彩票-股票-社保-快递-工作",
+  "categoryIncomeList": "工资-理财-收红包-奖金-报销-兼职-收礼-利息-退款-投资收益-二手转卖-社会保障-退税退费-公积金",
+  "categoryExpenseDining": "餐饮-早餐-午餐-晚餐-美团外卖-饿了么外卖-京东外卖-餐厅-美食",
+  "categoryExpenseSnacks": "零食-饼干-薯片-糖果-巧克力-坚果",
+  "categoryExpenseFruit": "水果-苹果-香蕉-橙子-葡萄-西瓜-其他水果",
+  "categoryExpenseBeverage": "饮品-奶茶-咖啡-果汁-汽水-矿泉水",
+  "categoryExpensePastry": "糕点-蛋糕-面包-甜点-饼干",
+  "categoryExpenseCooking": "做饭食材-蔬菜-肉类-水产-调料-粮油",
+  "categoryExpenseShopping": "购物-服装-鞋帽-包包-配饰-日用百货",
+  "categoryExpensePets": "宠物-宠物食品-宠物用品-宠物医疗-宠物美容",
+  "categoryExpenseTransport": "交通-地铁-公交-出租车-网约车-停车费-加油",
+  "categoryExpenseCar": "汽车-汽车保养-汽车维修-汽车保险-洗车-违章罚款",
+  "categoryExpenseClothing": "服饰-上衣-裤子-裙子-鞋子-配饰",
+  "categoryExpenseDailyGoods": "日用品-洗护用品-纸品-清洁用品-厨房用品",
+  "categoryExpenseEducation": "教育-学费-培训费-书籍-文具-办公用品",
+  "categoryExpenseInvestLoss": "投资亏损-股票亏损-基金亏损-其他投资亏损",
+  "categoryExpenseEntertainment": "娱乐-电影-KTV-游乐场-酒吧-其他娱乐",
+  "categoryExpenseGame": "游戏-游戏充值-游戏装备-游戏会员",
+  "categoryExpenseHealthProducts": "保健品-维生素-保健食品-营养品",
+  "categoryExpenseSubscription": "订阅服务-视频会员-音乐会员-云存储-其他订阅",
+  "categoryExpenseSports": "运动-健身房-运动装备-运动课程-户外活动",
+  "categoryExpenseHousing": "住房-房租-物业费-房贷-装修",
+  "categoryExpenseHome": "居家-家具-家电-装饰品-床上用品",
+  "categoryExpenseBeauty": "美容-护肤品-化妆品-美容美发-美甲",
+  "categoryIncomeSalary": "工资-基本工资-绩效奖金-年终奖-加班费",
+  "categoryIncomeInvestment": "理财-基金收益-股票分红-理财产品-其他理财",
+  "categoryIncomeRedPacket": "红包-节日红包-生日红包-随礼回礼",
+  "categoryIncomeBonus": "奖金-年终奖-季度奖-项目奖金-其他奖金",
+  "categoryIncomeReimbursement": "报销-差旅报销-餐费报销-其他报销",
+  "categoryIncomePartTime": "兼职-兼职收入-外快",
+  "categoryIncomeGift": "结婚礼金-生日礼金-其他礼金",
+  "categoryIncomeInterest": "利息-银行利息-其他利息",
+  "categoryIncomeRefund": "退款-购物退款-服务退款-其他退款",
+  "categoryIncomeInvestIncome": "投资收益-股票收益-基金收益-其他投资收益",
+  "categoryIncomeSecondHand": "二手交易-闲置物品-二手商品",
+  "categoryIncomeSocialBenefit": "社会福利-失业保险-生育津贴-其他补贴",
+  "categoryIncomeTaxRefund": "退税-个税退税-其他退费",
+  "categoryIncomeProvidentFund": "公积金-公积金提取-公积金利息",
+  "personalizeTitle": "个性化",
+  "personalizeCustomColor": "选择自定义颜色",
+  "personalizeCustomTitle": "自定义",
+  "personalizeHue": "色相 ({value}°)",
+  "personalizeSaturation": "饱和度 ({value}%)",
+  "personalizeBrightness": "亮度 ({value}%)",
+  "personalizeSelectColor": "选择此颜色",
+  "appearanceThemeMode": "外观模式",
+  "appearanceThemeModeSystem": "跟随系统",
+  "appearanceThemeModeLight": "亮色模式",
+  "appearanceThemeModeDark": "暗黑模式",
+  "appearanceDarkModePattern": "暗黑模式头部图案",
+  "appearancePatternNone": "无",
+  "appearancePatternIcons": "图标平铺",
+  "appearancePatternParticles": "粒子星星",
+  "appearancePatternHoneycomb": "蜂巢六边形",
+  "appearanceAmountFormat": "余额显示格式",
+  "appearanceAmountFormatFull": "完整金额",
+  "appearanceAmountFormatFullDesc": "显示完整金额，如 123,456.78",
+  "appearanceAmountFormatCompact": "简洁显示",
+  "appearanceAmountFormatCompactDesc": "大金额缩写，如 12.3万（仅对账户余额生效）",
+  "appearanceShowTransactionTime": "显示交易时间",
+  "appearanceShowTransactionTimeDesc": "在账单列表显示时分，编辑时可选择时间",
+  "appearanceColorScheme": "收支颜色方案",
+  "appearanceColorSchemeOn": "红色收入 · 绿色支出",
+  "appearanceColorSchemeOff": "红色支出 · 绿色收入",
+  "appearanceColorSchemeOnDesc": "红色表示收入，绿色表示支出",
+  "appearanceColorSchemeOffDesc": "红色表示支出，绿色表示收入",
+  "fontSettingsCurrentScale": "当前缩放：x{scale}",
+  "fontSettingsPreview": "实时预览",
+  "fontSettingsPreviewText": "今天吃饭花了 23.50 元，记一笔；\n本月已记账 45 天，共 320 条记录；\n坚持就是胜利！",
+  "fontSettingsCurrentLevel": "当前档位：{level}  (倍率 x{scale})",
+  "fontSettingsQuickLevel": "快速档位",
+  "fontSettingsCustomAdjust": "自定义调整",
+  "fontSettingsDescription": "说明：此设置确保所有设备在1.0倍时显示效果一致，设备差异已自动补偿；调整数值可在一致基础上进行个性化缩放。",
+  "fontSettingsExtraSmall": "极小",
+  "fontSettingsVerySmall": "很小",
+  "fontSettingsSmall": "较小",
+  "fontSettingsStandard": "标准",
+  "fontSettingsLarge": "较大",
+  "fontSettingsBig": "大",
+  "fontSettingsVeryBig": "很大",
+  "fontSettingsExtraBig": "极大",
+  "fontSettingsMoreStyles": "更多风格",
+  "fontSettingsPageTitle": "页面标题",
+  "fontSettingsBlockTitle": "区块标题",
+  "fontSettingsBodyExample": "正文示例",
+  "fontSettingsLabelExample": "标签说明",
+  "fontSettingsStrongNumber": "强调数字",
+  "fontSettingsListTitle": "列表项标题",
+  "fontSettingsListSubtitle": "辅助说明文本",
+  "fontSettingsScreenInfo": "屏幕适配信息",
+  "fontSettingsScreenDensity": "屏幕密度",
+  "fontSettingsScreenWidth": "屏幕宽度",
+  "fontSettingsDeviceScale": "设备缩放",
+  "fontSettingsUserScale": "用户缩放",
+  "fontSettingsFinalScale": "最终缩放",
+  "fontSettingsBaseDevice": "基准设备",
+  "fontSettingsRecommendedScale": "推荐缩放",
+  "fontSettingsYes": "是",
+  "fontSettingsNo": "否",
+  "fontSettingsScaleExample": "此方框和间距会根据设备自动缩放",
+  "fontSettingsPreciseAdjust": "精确调整",
+  "fontSettingsResetTo1x": "重置到1.0x",
+  "fontSettingsAdaptBase": "适配基准",
+  "reminderTitle": "记账提醒",
+  "reminderSubtitle": "设置每日记账提醒时间",
+  "reminderDailyTitle": "每日记账提醒",
+  "reminderDailySubtitle": "开启后将在指定时间提醒您记账",
+  "reminderTimeTitle": "提醒时间",
+  "commonSelectTime": "选择时间",
+  "reminderTestNotification": "发送测试通知",
+  "reminderTestSent": "测试通知已发送",
+  "reminderTestTitle": "测试通知",
+  "reminderTestBody": "这是一条测试通知，点击查看效果",
+  "reminderCheckBattery": "检查电池优化状态",
+  "reminderBatteryStatus": "电池优化状态",
+  "reminderManufacturer": "设备制造商: {value}",
+  "reminderModel": "设备型号: {value}",
+  "reminderAndroidVersion": "Android版本: {value}",
+  "reminderBatteryIgnored": "电池优化状态: 已忽略 ✅",
+  "reminderBatteryNotIgnored": "电池优化状态: 未忽略 ⚠️",
+  "reminderBatteryAdvice": "建议关闭电池优化以确保通知正常工作",
+  "reminderCheckChannel": "检查通知渠道设置",
+  "reminderChannelStatus": "通知渠道状态",
+  "reminderChannelEnabled": "渠道启用: 是 ✅",
+  "reminderChannelDisabled": "渠道启用: 否 ❌",
+  "reminderChannelImportance": "重要性: {value}",
+  "reminderChannelSoundOn": "声音: 开启 🔊",
+  "reminderChannelSoundOff": "声音: 关闭 🔇",
+  "reminderChannelVibrationOn": "震动: 开启 📳",
+  "reminderChannelVibrationOff": "震动: 关闭",
+  "reminderChannelDndBypass": "勿扰模式: 可绕过",
+  "reminderChannelDndNoBypass": "勿扰模式: 不可绕过",
+  "reminderChannelAdvice": "⚠️ 建议设置：",
+  "reminderChannelAdviceImportance": "• 重要性：紧急或高",
+  "reminderChannelAdviceSound": "• 开启声音和震动",
+  "reminderChannelAdviceBanner": "• 允许横幅通知",
+  "reminderChannelAdviceXiaomi": "• 小米手机需单独设置每个渠道",
+  "reminderChannelGood": "✅ 通知渠道配置良好",
+  "reminderOpenAppSettings": "打开应用设置",
+  "reminderAppSettingsMessage": "请在设置中允许通知、关闭电池优化",
+  "reminderDescription": "提示：开启记账提醒后，系统会在每天指定时间发送通知提醒您记录收支。",
+  "reminderIOSInstructions": "🍎 iOS通知设置：\n• 设置 > 通知 > 蜜蜂记账\n• 开启\"允许通知\"\n• 设置通知样式：横幅或提醒\n• 开启声音和震动\n\n⚠️ 重要提示：\n• iOS本地通知依赖应用进程\n• 请勿在任务管理器中划掉应用\n• 应用在后台或前台时通知正常\n• 完全关闭应用会导致通知失效\n\n💡 使用建议：\n• 日常使用后直接按Home键退出\n• iOS会自动管理后台应用\n• 保持应用在后台即可收到提醒",
+  "reminderAndroidInstructions": "如果通知无法正常工作，请检查：\n• 已允许应用发送通知\n• 关闭应用的电池优化/省电模式\n• 允许应用在后台运行和自启动\n• Android 12+需要精确闹钟权限\n\n📱 小米手机特殊设置：\n• 设置 > 应用管理 > 蜜蜂记账 > 通知管理\n• 点击\"记账提醒\"渠道\n• 设置重要性为\"紧急\"或\"高\"\n• 开启\"横幅通知\"、\"声音\"、\"震动\"\n• 安全中心 > 应用管理 > 权限 > 自启动\n\n🔒 锁定后台方法：\n• 最近任务中找到蜜蜂记账\n• 向下拉动应用卡片显示锁定图标\n• 点击锁定图标防止被清理",
+  "categoryDetailLoadFailed": "加载失败",
+  "categoryDetailSummaryTitle": "分类汇总",
+  "categoryDetailTotalCount": "总笔数",
+  "categoryDetailTotalAmount": "总金额",
+  "categoryDetailAverageAmount": "平均金额",
+  "categoryDetailSortTitle": "排序",
+  "categoryDetailSortTimeDesc": "时间↓",
+  "categoryDetailSortTimeAsc": "时间↑",
+  "categoryDetailSortAmountDesc": "金额↓",
+  "categoryDetailSortAmountAsc": "金额↑",
+  "categoryDetailNoTransactions": "暂无交易记录",
+  "categoryDetailNoTransactionsSubtext": "该分类下还没有任何交易记录",
+  "categoryDetailDeleteFailed": "删除失败",
+  "categoryMigrationConfirmTitle": "确认迁移",
+  "categoryMigrationConfirmMessage": "确定要将「{fromName}」的 {count} 笔交易迁移到「{toName}」吗？\n\n此操作不可撤销！",
+  "categoryMigrationConfirmOk": "确认迁移",
+  "categoryMigrationCompleteTitle": "迁移完成",
+  "categoryMigrationCompleteMessage": "成功将 {count} 笔交易从「{fromName}」迁移到「{toName}」。",
+  "categoryMigrationFailedTitle": "迁移失败",
+  "categoryMigrationFailedMessage": "迁移过程中发生错误：{error}",
+  "categoryMigrationTransactionLabel": "{count}笔",
+  "importColumnNumber": "第 {number} 列",
+  "importConfirmMapping": "确认映射",
+  "importCategoryMapping": "分类映射",
+  "importNoDataParsed": "未解析到任何数据，请返回上一页检查 CSV 内容或分隔符。",
+  "importFieldDate": "日期",
+  "importFieldType": "类型",
+  "importFieldAmount": "金额",
+  "importFieldCategory": "分类",
+  "importFieldAccount": "账户",
+  "importFieldNote": "备注",
+  "importPreview": "预览：",
+  "importPreviewLimit": "仅预览前 {shown} 行，共 {total} 行",
+  "importCategoryNotSelected": "未选择\"分类\"列，请点击\"上一步\"返回并设置\"分类\"的列，再继续。",
+  "importCategoryMappingDescription": "请将左侧\"源分类名\"映射到系统内已有分类（或保持原名自动创建/合并）",
+  "importKeepOriginalName": "保持原名（自动创建/合并）",
+  "importProgress": "导入中… 成功 {ok}，失败 {fail}",
+  "importCancelImport": "取消导入",
+  "importCompleteTitle": "导入完成",
+  "importSelectCategoryFirst": "请先选择\"分类\"列再继续",
+  "importNextStep": "下一步",
+  "importPreviousStep": "上一步",
+  "importStartImport": "开始导入",
+  "importAutoDetect": "自动",
+  "importInProgress": "正在导入…",
+  "importProgressDetail": "已完成：{done}/{total}，成功 {ok}，失败 {fail}",
+  "importBackgroundImport": "后台导入",
+  "importCancelled": "（已取消）",
+  "importCompleted": "导入完成{cancelled}：成功 {ok} 条，失败 {fail} 条",
+  "importSkippedNonTransactionTypes": "跳过 {count} 条非收支记录（债务等）",
+  "importTransactionFailed": "导入失败，已回滚所有更改：{error}",
+  "mineImportCompleteAllSuccess": "全部成功",
+  "mineCheckUpdateDetecting": "检测更新中...",
+  "mineCheckUpdateSubtitleDetecting": "正在检查最新版本",
+  "mineUpdateDownloadTitle": "下载更新",
+  "cloudTest": "测试",
+  "cloudSwitched": "已切换",
+  "cloudSwitchFailed": "切换失败",
+  "cloudSupabaseUrlLabel": "Supabase URL",
+  "cloudSupabaseUrlHint": "https://xxx.supabase.co",
+  "cloudAnonKeyLabel": "Anon Key",
+  "cloudSelectServiceType": "选择云服务类型",
+  "cloudMultiDeviceWarningTitle": "多设备同步提示",
+  "cloudMultiDeviceWarningMessage": "当前暂不支持多设备协同编辑。如需在新设备使用，请先清空新设备的本地数据，然后从云端下载账本。",
+  "cloudMultiDeviceWarningDetail": "多设备同步说明：\n\n1. 目前不支持多设备同时编辑同一账本\n2. 如果在设备A编辑后，切换到设备B使用：\n   • 需要在设备B上清空所有账本\n   • 然后从云端下载最新数据\n3. 未来版本将支持真正的多设备协同",
+  "cloudWebdavUrlLabel": "WebDAV 服务器地址",
+  "cloudWebdavUrlHint": "https://dav.jianguoyun.com/dav/",
+  "cloudWebdavUsernameLabel": "用户名",
+  "cloudWebdavPasswordLabel": "密码",
+  "cloudWebdavPathHint": "/BeeCount",
+  "cloudS3EndpointLabel": "端点地址",
+  "cloudS3EndpointHint": "s3.amazonaws.com 或自定义端点",
+  "cloudS3RegionLabel": "区域",
+  "cloudS3RegionHint": "us-east-1（留空自动）",
+  "cloudS3AccessKeyLabel": "Access Key",
+  "cloudS3AccessKeyHint": "您的 Access Key ID",
+  "cloudS3SecretKeyLabel": "Secret Key",
+  "cloudS3SecretKeyHint": "您的 Secret Access Key",
+  "cloudS3BucketLabel": "存储桶名称",
+  "cloudS3BucketHint": "beecount-data",
+  "cloudS3UseSSLLabel": "使用 HTTPS",
+  "cloudS3PortLabel": "端口（可选）",
+  "cloudS3PortHint": "留空使用默认端口",
+  "cloudSupabaseBucketLabel": "Storage Bucket 名称",
+  "cloudSupabaseBucketHint": "留空使用默认值 beecount-backups",
+  "authRememberAccount": "记住账号密码",
+  "authRememberAccountHint": "下次登录时自动填充（仅Supabase）",
+  "cloudConfigSaved": "配置已保存",
+  "cloudTestSuccess": "连接测试成功！",
+  "cloudTestFailed": "连接测试失败，请检查配置是否正确。",
+  "cloudTestError": "测试失败",
+  "cloudLocalStorageTitle": "本地存储",
+  "cloudLocalStorageSubtitle": "数据仅保存在本地设备",
+  "cloudCustomSupabaseTitle": "自定义 Supabase",
+  "cloudCustomWebdavTitle": "自定义 WebDAV",
+  "cloudSwitchConfirmTitle": "切换云服务",
+  "cloudSwitchConfirmMessage": "切换云服务将登出当前账号,确认切换?",
+  "cloudSwitchFailedTitle": "切换失败",
+  "cloudSwitchFailedConfigMissing": "请先配置该云服务",
+  "cloudConfigInvalidTitle": "配置无效",
+  "cloudConfigInvalidMessage": "请填写完整信息",
+  "cloudSaveFailed": "保存失败",
+  "cloudSwitchedTo": "已切换到{type}",
+  "@cloudSwitchedTo": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudConfigureSupabaseTitle": "配置 Supabase",
+  "cloudConfigureWebdavTitle": "配置 WebDAV",
+  "cloudConfigureS3Title": "配置 S3",
+  "cloudWebdavRemotePathHelp": "数据存储的远程目录路径",
+  "authLogin": "登录",
+  "authSignup": "注册",
+  "authEmail": "邮箱",
+  "authPassword": "密码",
+  "authPasswordRequirement": "密码（至少 6 位，需包含字母和数字）",
+  "authConfirmPassword": "确认密码",
+  "authInvalidEmail": "请输入有效的邮箱地址",
+  "authPasswordRequirementShort": "密码需包含字母和数字，长度至少 6 位",
+  "authPasswordMismatch": "两次输入的密码不一致",
+  "authResendVerification": "重发验证邮件",
+  "authSignupSuccess": "注册成功",
+  "authVerificationEmailSent": "验证邮件已发送，请前往邮箱完成验证后再登录。",
+  "authBackToMinePage": "返回我的页面",
+  "authVerificationEmailResent": "验证邮件已重新发送。",
+  "authResendAction": "重发验证",
+  "authErrorInvalidCredentials": "邮箱或密码不正确。",
+  "authErrorEmailNotConfirmed": "邮箱未验证，请先到邮箱完成验证再登录。",
+  "authErrorRateLimit": "操作过于频繁，请稍后再试。",
+  "authErrorNetworkIssue": "网络异常，请检查网络后重试。",
+  "authErrorLoginFailed": "登录失败，请稍后再试。",
+  "authErrorEmailInvalid": "邮箱地址无效，请检查是否拼写有误。",
+  "authErrorEmailExists": "该邮箱已注册，请直接登录或重置密码。",
+  "authErrorWeakPassword": "密码过于简单，请包含字母和数字，长度至少 6 位。",
+  "authErrorSignupFailed": "注册失败，请稍后再试。",
+  "authErrorUserNotFound": "邮箱未注册，无法{action}。",
+  "authErrorEmailNotVerified": "邮箱未验证，无法{action}。",
+  "authErrorActionFailed": "{action}失败，请稍后再试。",
+  "@authErrorUserNotFound": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "@authErrorEmailNotVerified": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "@authErrorActionFailed": {
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
+  },
+  "importSelectCsvFile": "请选择文件进行导入（支持 CSV/TSV/XLSX 格式）",
+  "@importFileOpenError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "exportTitle": "导出",
+  "exportDescription": "支持导出的数据类型：\n• 交易记录（收入/支出/转账）\n• 分类信息\n• 账户信息\n\n点击下方按钮选择保存位置，开始导出当前账本为 CSV 文件。",
+  "exportButtonIOS": "导出并分享",
+  "exportButtonAndroid": "导出数据",
+  "exportSavedTo": "已保存到：{path}",
+  "exportCsvHeaderType": "类型",
+  "exportCsvHeaderCategory": "分类",
+  "exportCsvHeaderSubCategory": "二级分类",
+  "exportCsvHeaderAmount": "金额",
+  "exportCsvHeaderAccount": "账户",
+  "exportCsvHeaderFromAccount": "转出账户",
+  "exportCsvHeaderToAccount": "转入账户",
+  "exportCsvHeaderNote": "备注",
+  "exportCsvHeaderTime": "时间",
+  "exportCsvHeaderTags": "标签",
+  "exportCsvHeaderAttachments": "附件",
+  "exportShareText": "BeeCount 导出文件",
+  "exportSuccessTitle": "导出成功",
+  "exportSuccessMessageIOS": "已保存并可在分享历史中找到：\n{path}",
+  "exportSuccessMessageAndroid": "已保存到：\n{path}",
+  "exportFailedTitle": "导出失败",
+  "exportTypeIncome": "收入",
+  "exportTypeExpense": "支出",
+  "exportTypeTransfer": "转账",
+  "@exportSavedTo": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "@exportSuccessMessageIOS": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "@exportSuccessMessageAndroid": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "personalizeThemeHoney": "蜜蜂黄",
+  "personalizeThemeOrange": "火焰橙",
+  "personalizeThemeGreen": "琉璃绿",
+  "personalizeThemePurple": "青莲紫",
+  "personalizeThemePink": "樱绯红",
+  "personalizeThemeBlue": "晴空蓝",
+  "personalizeThemeMint": "林间月",
+  "personalizeThemeSand": "黄昏沙丘",
+  "personalizeThemeLavender": "雪与松",
+  "personalizeThemeSky": "迷雾仙境",
+  "personalizeThemeWarmOrange": "暖阳橘",
+  "personalizeThemeMintGreen": "薄荷青",
+  "personalizeThemeRoseGold": "玫瑰金",
+  "personalizeThemeDeepBlue": "深海蓝",
+  "personalizeThemeMapleRed": "枫叶红",
+  "personalizeThemeEmerald": "翡翠绿",
+  "personalizeThemeLavenderPurple": "薰衣草",
+  "personalizeThemeAmber": "琥珀黄",
+  "personalizeThemeRouge": "胭脂红",
+  "personalizeThemeIndigo": "靛青蓝",
+  "personalizeThemeOlive": "橄榄绿",
+  "personalizeThemeCoral": "珊瑚粉",
+  "personalizeThemeDarkGreen": "墨绿色",
+  "personalizeThemeViolet": "紫罗兰",
+  "personalizeThemeSunset": "日落橙",
+  "personalizeThemePeacock": "孔雀蓝",
+  "personalizeThemeLime": "柠檬绿",
+  "analyticsMonthlyAvg": "月均",
+  "analyticsDailyAvg": "日均",
+  "analyticsOverallAvg": "平均值",
+  "analyticsTotalIncome": "总收入： ",
+  "analyticsTotalExpense": "总支出： ",
+  "analyticsBalance": "结余： ",
+  "analyticsAvgIncome": "{avgLabel}收入： ",
+  "analyticsAvgExpense": "{avgLabel}支出： ",
+  "analyticsExpense": "支出",
+  "analyticsIncome": "收入",
+  "analyticsTotal": "总{type}： ",
+  "analyticsAverage": "{avgLabel}： ",
+  "updateCheckTitle": "检查更新",
+  "updateNewVersionTitle": "发现新版本 {version}",
+  "updateNoApkFound": "未找到APK下载链接",
+  "updateAlreadyLatest": "当前已是最新版本",
+  "updateCheckFailed": "检查更新失败",
+  "updatePermissionDenied": "权限被拒绝",
+  "updateUserCancelled": "用户取消",
+  "updateDownloadTitle": "下载更新",
+  "updateDownloading": "下载中: {percent}%",
+  "updateDownloadBackgroundHint": "可以将应用切换到后台，下载会继续进行",
+  "updateCancelButton": "取消",
+  "updateBackgroundDownload": "后台下载",
+  "updateLaterButton": "稍后",
+  "updateDownloadButton": "下载",
+  "updateInstallingCachedApk": "正在安装缓存的APK",
+  "updateDownloadComplete": "下载完成",
+  "updateInstallStarted": "下载完成，安装程序已启动",
+  "updateInstallFailed": "安装失败",
+  "updateDownloadFailed": "下载失败",
+  "updateInstallNow": "立即安装",
+  "updateNotificationPermissionTitle": "通知权限被拒绝",
+  "updateCheckFailedTitle": "检测更新失败",
+  "updateDownloadFailedTitle": "下载失败",
+  "updateGoToGitHub": "前往GitHub",
+  "updateCannotOpenLink": "无法打开链接",
+  "updateManualVisit": "请手动在浏览器中访问：\\nhttps://github.com/TNT-Likely/BeeCount/releases",
+  "updateNoLocalApkTitle": "未找到更新包",
+  "updateInstallPackageTitle": "安装更新包",
+  "updateMultiplePackagesTitle": "找到多个更新包",
+  "updateSearchFailedTitle": "查找失败",
+  "updateFoundCachedPackageTitle": "发现已下载的更新包",
+  "updateIgnoreButton": "忽略",
+  "updateInstallFailedTitle": "安装失败",
+  "updateInstallFailedMessage": "无法启动APK安装程序，请检查文件权限。",
+  "updateErrorTitle": "错误",
+  "updateCheckingPermissions": "检查权限...",
+  "updateCheckingCache": "检查本地缓存...",
+  "updatePreparingDownload": "准备下载...",
+  "updateUserCancelledDownload": "用户取消下载",
+  "updateStartingInstaller": "正在启动安装...",
+  "updateInstallerStarted": "安装程序已启动",
+  "updateInstallationFailed": "安装失败",
+  "updateDownloadCompleted": "下载完成",
+  "updateDownloadCompletedManual": "下载完成，可以手动安装",
+  "updateDownloadCompletedDialog": "下载完成，请手动安装（弹窗异常）",
+  "updateDownloadCompletedContext": "下载完成，请手动安装",
+  "updateDownloadFailedGeneric": "下载失败",
+  "updateCheckingUpdate": "正在检查更新...",
+  "updateCurrentLatestVersion": "当前已是最新版本",
+  "updateCheckFailedGeneric": "检查更新失败",
+  "updateDownloadProgress": "下载中: {percent}%",
+  "updateCheckingUpdateError": "检查更新失败: {error}",
+  "updateNoLocalApkFoundMessage": "没有找到已下载的更新包文件。\n\n请先通过\"检查更新\"下载新版本。",
+  "updateInstallPackageFoundMessage": "找到更新包：\n\n文件名：{fileName}\n大小：{fileSize}MB\n下载时间：{time}\n\n是否立即安装？",
+  "updateMultiplePackagesFoundMessage": "找到 {count} 个更新包文件。\n\n建议使用最新下载的版本，或手动到文件管理器中安装。\n\n文件位置：{path}",
+  "updateSearchLocalApkError": "查找本地更新包时发生错误：{error}",
+  "updateCachedPackageFoundMessage": "检测到之前下载的更新包：\n\n文件名：{fileName}\n大小：{fileSize}MB\n\n是否立即安装？",
+  "updateReadCachedPackageError": "读取缓存更新包失败：{error}",
+  "iconCategoryDining": "餐饮",
+  "updateOk": "知道了",
+  "updateCannotOpenLinkTitle": "无法打开链接",
+  "updateNotificationPermissionGuideText": "下载进度通知被关闭，但不影响下载功能。如需查看进度：",
+  "updateNotificationGuideStep1": "进入系统设置 > 应用管理",
+  "updateNotificationGuideStep2": "找到\\\"蜜蜂记账\\\"应用",
+  "updateNotificationGuideStep3": "开启通知权限",
+  "updateNotificationGuideInfo": "即使不开启通知，下载也会在后台正常进行",
+  "updateCachedVersionTitle": "发现已下载版本",
+  "updateCachedVersionMessage": "已找到之前下载的安装包...点击\\\"确定\\\"立即安装，点击\\\"取消\\\"关闭...",
+  "updateCorruptedFileTitle": "安装包已损坏",
+  "updateCorruptedFileMessage": "检测到之前下载的安装包不完整或已损坏，是否删除并重新下载？",
+  "updateConfirmDownload": "立即下载并安装",
+  "updateDownloadCompleteTitle": "下载完成",
+  "updateInstallConfirmMessage": "新版本已下载完成，是否立即安装？",
+  "updateMirrorSelectTitle": "选择下载加速器",
+  "updateMirrorSelectHint": "如果下载缓慢，可以选择一个加速镜像。点击「测速」检测各镜像延迟。",
+  "updateMirrorTestButton": "测速",
+  "updateMirrorTesting": "正在测试 {completed}/{total}...",
+  "@updateMirrorTesting": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "updateMirrorDirectHint": "适合网络通畅的用户",
+  "updateDownloadMirror": "下载源: {mirror}",
+  "@updateDownloadMirror": {
+    "placeholders": {
+      "mirror": {
+        "type": "String"
+      }
+    }
+  },
+  "updateMirrorSettingTitle": "下载加速器",
+  "currencyCNY": "人民币",
+  "currencyUSD": "美元",
+  "currencyEUR": "欧元",
+  "currencyJPY": "日元",
+  "currencyHKD": "港币",
+  "currencyTWD": "新台币",
+  "currencyGBP": "英镑",
+  "currencyAUD": "澳元",
+  "currencyCAD": "加元",
+  "currencyKRW": "韩元",
+  "currencySGD": "新加坡元",
+  "currencyMYR": "马来西亚林吉特",
+  "currencyTHB": "泰铢",
+  "currencyIDR": "印尼卢比",
+  "currencyPHP": "菲律宾比索",
+  "currencyVND": "越南盾",
+  "currencyINR": "印度卢比",
+  "currencyRUB": "俄罗斯卢布",
+  "currencyBYN": "白俄罗斯卢布",
+  "currencyNZD": "新西兰元",
+  "currencyCHF": "瑞士法郎",
+  "currencySEK": "瑞典克朗",
+  "currencyNOK": "挪威克朗",
+  "currencyDKK": "丹麦克朗",
+  "currencyBRL": "巴西雷亚尔",
+  "currencyMXN": "墨西哥比索",
+  "webdavConfiguredTitle": "WebDAV 云服务已配置",
+  "webdavConfiguredMessage": "WebDAV 云服务使用配置时提供的凭据，无需额外登录。",
+  "recurringTransactionTitle": "周期账单",
+  "recurringTransactionAdd": "添加周期账单",
+  "recurringTransactionEdit": "编辑周期账单",
+  "recurringTransactionFrequency": "周期频率",
+  "recurringTransactionDaily": "每天",
+  "recurringTransactionWeekly": "每周",
+  "recurringTransactionMonthly": "每月",
+  "recurringTransactionYearly": "每年",
+  "recurringTransactionInterval": "间隔",
+  "recurringTransactionDayOfMonth": "每月第几天",
+  "recurringTransactionStartDate": "开始日期",
+  "recurringTransactionEndDate": "结束日期",
+  "recurringTransactionNoEndDate": "永久周期",
+  "recurringTransactionDeleteConfirm": "确定要删除这个周期账单吗？",
+  "recurringTransactionEmpty": "暂无周期账单",
+  "recurringTransactionEmptyHint": "点击右上角 + 按钮添加",
+  "recurringTransactionEveryNDays": "每 {n} 天",
+  "@recurringTransactionEveryNDays": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "recurringTransactionEveryNWeeks": "每 {n} 周",
+  "@recurringTransactionEveryNWeeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "recurringTransactionEveryNMonths": "每 {n} 个月",
+  "@recurringTransactionEveryNMonths": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "recurringTransactionEveryNYears": "每 {n} 年",
+  "@recurringTransactionEveryNYears": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "recurringTransactionUsageTitle": "使用说明",
+  "recurringTransactionUsageContent": "周期记账会在每次冷启动进入App时自动扫描并生成账单。设置日期后，系统会在该日期之后的冷启动时创建对应账单。例如：设置11月27日，则会在11月27日之后的首次启动时自动记账。",
+  "ledgerSelectTitle": "选择账本",
+  "ledgerSelect": "选择账本",
+  "syncNotConfiguredMessage": "未配置云端",
+  "syncNotLoggedInMessage": "未登录",
+  "syncCloudBackupCorruptedMessage": "云端备份内容无法解析，可能是早期版本编码问题造成的损坏。请点击\\\"上传当前账本到云端\\\"覆盖修复。",
+  "syncNoCloudBackupMessage": "云端暂无备份",
+  "syncAccessDeniedMessage": "403 拒绝访问（检查 storage RLS 策略与路径）",
+  "cloudTestConnection": "测试连接",
+  "cloudCustomSupabaseSubtitle": "点击配置自建Supabase服务",
+  "cloudCustomWebdavSubtitle": "点击配置坚果云/Nextcloud等",
+  "cloudCustomS3Title": "S3 协议存储",
+  "cloudCustomS3Subtitle": "AWS S3 / Cloudflare R2 / MinIO",
+  "cloudIcloudSubtitle": "使用 Apple ID 自动同步",
+  "cloudIcloudNotAvailableTitle": "iCloud 不可用",
+  "cloudIcloudNotAvailableMessage": "请在系统设置中登录 iCloud 账户后再试",
+  "cloudIcloudHelpTitle": "iCloud 使用说明",
+  "cloudIcloudHelpPrerequisites": "前提条件",
+  "cloudIcloudHelpPrereq1": "1. 设备已登录 Apple ID",
+  "cloudIcloudHelpPrereq2": "2. 已开启 iCloud Drive",
+  "cloudIcloudHelpPrereq3": "3. 设备已联网",
+  "cloudIcloudHelpCheckTitle": "如何检查 iCloud Drive",
+  "cloudIcloudHelpCheck1": "1. 打开「设置」",
+  "cloudIcloudHelpCheck2": "2. 点击顶部的 Apple ID",
+  "cloudIcloudHelpCheck3": "3. 点击「iCloud」",
+  "cloudIcloudHelpCheck4": "4. 确保「iCloud 云盘」已开启",
+  "cloudIcloudHelpFaqTitle": "常见问题",
+  "cloudIcloudHelpFaq1": "如果提示不可用，请检查 iCloud Drive 是否开启",
+  "cloudIcloudHelpFaq2": "首次使用可能需要等待几秒钟初始化",
+  "cloudIcloudHelpFaq3": "数据存储在您的私人 iCloud 空间中",
+  "cloudIcloudHelpFaq4": "同一 Apple ID 的设备可自动同步",
+  "cloudIcloudHelpNote": "iCloud 同步使用您的 Apple ID，无需额外配置",
+  "cloudSupabaseHelpTitle": "Supabase 配置说明",
+  "cloudSupabaseHelpIntro": "什么是 Supabase",
+  "cloudSupabaseHelpIntro1": "Supabase 是一个开源的后端即服务平台",
+  "cloudSupabaseHelpIntro2": "提供免费套餐，足够个人使用",
+  "cloudSupabaseHelpIntro3": "数据完全由您掌控",
+  "cloudSupabaseHelpSteps": "配置步骤",
+  "cloudSupabaseHelpStep1": "1. 访问 supabase.com 注册账号",
+  "cloudSupabaseHelpStep2": "2. 创建新项目（选择免费套餐）",
+  "cloudSupabaseHelpStep3": "3. 进入项目设置 > API",
+  "cloudSupabaseHelpStep4": "4. 复制 Project URL 和 anon key",
+  "cloudSupabaseHelpStep5": "5. 粘贴到应用的配置中",
+  "cloudSupabaseHelpFaq": "常见问题",
+  "cloudSupabaseHelpFaq1": "免费套餐有 500MB 存储空间",
+  "cloudSupabaseHelpFaq2": "数据加密存储，安全可靠",
+  "cloudSupabaseHelpFaq3": "支持多设备同步",
+  "cloudSupabaseHelpNote": "配置完成后需要注册/登录账号才能使用同步功能",
+  "cloudDetailedTutorial": "详细教程",
+  "cloudWebdavHelpTitle": "WebDAV 配置说明",
+  "cloudWebdavHelpIntro": "什么是 WebDAV",
+  "cloudWebdavHelpIntro1": "WebDAV 是一种网络文件协议",
+  "cloudWebdavHelpIntro2": "支持多种云盘和NAS设备",
+  "cloudWebdavHelpIntro3": "数据存储在您自己的服务器上",
+  "cloudWebdavHelpProviders": "支持的服务商",
+  "cloudWebdavHelpProvider1": "• 坚果云（推荐国内用户）",
+  "cloudWebdavHelpProvider2": "• Nextcloud / ownCloud",
+  "cloudWebdavHelpProvider3": "• 群晖 / 威联通 NAS",
+  "cloudWebdavHelpProvider4": "• 其他支持 WebDAV 的服务",
+  "cloudWebdavHelpSteps": "配置步骤（以坚果云为例）",
+  "cloudWebdavHelpStep1": "1. 登录坚果云网页版",
+  "cloudWebdavHelpStep2": "2. 点击右上角账户名 > 账户信息",
+  "cloudWebdavHelpStep3": "3. 选择「安全选项」标签",
+  "cloudWebdavHelpStep4": "4. 添加应用密码（用于第三方应用）",
+  "cloudWebdavHelpStep5": "5. 复制服务器地址、账号、应用密码",
+  "cloudWebdavHelpNote": "建议使用应用专用密码，而非账号密码",
+  "cloudS3HelpTitle": "S3 存储配置说明",
+  "cloudS3HelpIntro": "什么是 S3",
+  "cloudS3HelpIntro1": "S3 是一种标准的对象存储协议",
+  "cloudS3HelpIntro2": "支持多家云服务商",
+  "cloudS3HelpIntro3": "数据存储在您选择的云服务中",
+  "cloudS3HelpProviders": "支持的服务商",
+  "cloudS3HelpProvider1": "• AWS S3（Amazon Web Services）",
+  "cloudS3HelpProvider2": "• Cloudflare R2（免费 10GB/月）",
+  "cloudS3HelpProvider3": "• Backblaze B2（免费 10GB）",
+  "cloudS3HelpProvider4": "• MinIO（自建服务）",
+  "cloudS3HelpProvider5": "• 阿里云 OSS",
+  "cloudS3HelpProvider6": "• 腾讯云 COS",
+  "cloudS3HelpProvider7": "• 七牛云 Kodo",
+  "cloudS3HelpSteps": "配置步骤（以 Cloudflare R2 为例）",
+  "cloudS3HelpStep1": "1. 登录 Cloudflare 控制台",
+  "cloudS3HelpStep2": "2. 进入 R2 > 创建存储桶",
+  "cloudS3HelpStep3": "3. 进入 R2 > 管理 R2 API 令牌",
+  "cloudS3HelpStep4": "4. 创建 API 令牌并复制凭据",
+  "cloudS3HelpStep5": "5. 粘贴端点、访问密钥、私密密钥和存储桶名称",
+  "cloudS3HelpNote": "推荐使用 Cloudflare R2，提供 10GB 免费存储且无流量费",
+  "cloudStatusNotTested": "未测试",
+  "cloudStatusNormal": "连接正常",
+  "cloudStatusFailed": "连接失败",
+  "cloudCannotOpenLink": "无法打开链接",
+  "cloudErrorAuthFailed": "认证失败: API Key 无效",
+  "cloudErrorServerStatus": "服务器返回状态码 {code}",
+  "@cloudErrorServerStatus": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudErrorWebdavNotSupported": "服务器不支持 WebDAV 协议",
+  "cloudErrorAuthFailedCredentials": "认证失败: 用户名或密码错误",
+  "cloudErrorAccessDenied": "访问被拒绝: 请检查权限",
+  "cloudErrorPathNotFound": "服务器路径不存在: {path}",
+  "@cloudErrorPathNotFound": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudErrorNetwork": "网络错误: {message}",
+  "@cloudErrorNetwork": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "cloudTestSuccessTitle": "测试成功",
+  "cloudTestSuccessMessage": "连接正常,配置有效",
+  "cloudTestFailedTitle": "测试失败",
+  "cloudTestFailedMessage": "连接失败",
+  "cloudTestErrorTitle": "测试错误",
+  "cloudSupabaseAnonKeyHintLong": "粘贴完整的 anon key",
+  "cloudWebdavRemotePathLabel": "远程路径",
+  "cloudWebdavRemotePathHelperText": "数据存储的远程目录路径",
+  "accountsTitle": "账户管理",
+  "accountsManageDesc": "管理支付账户与余额",
+  "accountsEmptyMessage": "还没有账户，点击右上角添加",
+  "accountAddTooltip": "添加账户",
+  "accountAddButton": "添加账户",
+  "accountBalance": "余额",
+  "accountEditTitle": "编辑账户",
+  "accountNewTitle": "新建账户",
+  "accountNameLabel": "账户名称",
+  "accountNameHint": "例如：工商银行、支付宝等",
+  "accountNameRequired": "请输入账户名称",
+  "accountNameDuplicate": "账户名称已存在，请使用其他名称",
+  "accountTypeLabel": "账户类型",
+  "accountTypeCash": "现金",
+  "accountTypeBankCard": "银行卡",
+  "accountTypeCreditCard": "信用卡",
+  "accountTypeAlipay": "支付宝",
+  "accountTypeWechat": "微信",
+  "accountTypeOther": "其他",
+  "accountInitialBalance": "初始资金",
+  "accountInitialBalanceHint": "请输入初始资金（可选）",
+  "accountDeleteWarningTitle": "确认删除",
+  "accountDeleteWarningMessage": "该账户有 {count} 笔关联交易，删除后交易记录中的账户信息将被清空。确认删除吗？",
+  "@accountDeleteWarningMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "accountDeleteConfirm": "确认删除该账户吗？",
+  "accountSelectTitle": "选择账户",
+  "accountNone": "不选择账户",
+  "accountsEnableFeature": "启用账户功能",
+  "accountsFeatureDescription": "启用后可以管理多个支付账户，追踪每个账户的余额变化",
+  "privacyOpenSourceUrlError": "无法打开链接",
+  "welcomeTitle": "欢迎使用 BeeCount",
+  "welcomeDescription": "一个真正尊重您隐私的记账应用",
+  "welcomeCurrencyDescription": "选择您常用的货币，之后可以随时在设置中更改",
+  "welcomePrivacyTitle": "开源透明 · 社群驱动",
+  "welcomePrivacyFeature1": "100% 开源代码，接受社区监督",
+  "welcomePrivacyFeature2": "无隐私顾虑，数据完全本地存储",
+  "welcomeOpenSourceFeature1": "活跃的开发者社群，持续改进",
+  "welcomeViewGitHub": "访问 GitHub 仓库",
+  "welcomeCloudSyncTitle": "可选的云同步",
+  "welcomeCloudSyncDescription": "BeeCount 支持多种同步方式，数据完全由你掌控",
+  "welcomeCloudSyncFeature1": "完全离线使用，无需云服务",
+  "welcomeCloudSyncFeature2": "iCloud 同步（iOS 用户零配置）",
+  "welcomeCloudSyncFeature3": "自建 WebDAV/Supabase/S3 服务",
+  "widgetManagement": "桌面小组件",
+  "widgetManagementDesc": "在主屏幕快速查看收支情况",
+  "widgetPreview": "小组件预览",
+  "widgetPreviewDesc": "小组件会自动显示当前账本的实际数据，主题色跟随应用设置",
+  "howToAddWidget": "如何添加小组件",
+  "iosWidgetStep1": "长按主屏幕空白区域，进入编辑模式",
+  "iosWidgetStep2": "点击左上角的\"+\"按钮",
+  "iosWidgetStep3": "搜索并选择\"蜜蜂记账\"",
+  "iosWidgetStep4": "选择中型小组件，添加到主屏幕",
+  "androidWidgetStep1": "长按主屏幕空白区域",
+  "androidWidgetStep2": "选择\"小组件\"或\"Widgets\"",
+  "androidWidgetStep3": "找到并长按\"蜜蜂记账\"小组件",
+  "androidWidgetStep4": "拖动到主屏幕合适位置",
+  "aboutWidget": "关于小组件",
+  "widgetDescription": "小组件会自动同步显示今日和本月的收支数据，每30分钟自动刷新一次。打开应用后会立即更新数据。",
+  "appName": "蜜蜂记账",
+  "monthSuffix": "月",
+  "todayExpense": "今日支出",
+  "todayIncome": "今日收入",
+  "monthExpense": "本月支出",
+  "monthIncome": "本月收入",
+  "autoScreenshotBilling": "截图自动记账",
+  "autoScreenshotBillingDesc": "截图后自动识别支付信息",
+  "autoScreenshotBillingTitle": "截图自动记账",
+  "featureDescription": "功能说明",
+  "featureDescriptionContent": "截图支付页面后，系统会自动识别金额和商家信息，并创建支出记录。\n\n⚡ 识别速度约 2-3 秒（部分设备可能更长）\n🤖 智能匹配分类\n📝 自动填写备注\n\n⚠️ 注意：\n• 不同设备截图入库速度不同，识别延迟可能 5-10 秒\n• 部分设备可能无法正常工作，取决于系统实现\n• 识别成功后会自动跳过已处理的截图\n• 受Android分区存储限制（Android 10+），应用无法删除系统截图，需手动清理相册",
+  "autoBilling": "自动记账",
+  "enabled": "已启用",
+  "disabled": "已禁用",
+  "photosPermissionRequired": "需要照片权限才能监听截图",
+  "enableSuccess": "自动记账已启用",
+  "disableSuccess": "自动记账已禁用",
+  "autoBillingBatteryTitle": "保持后台运行",
+  "autoBillingBatteryGuideTitle": "电池优化设置",
+  "autoBillingBatteryDesc": "自动记账需要应用在后台保持运行。部分手机会在锁屏后自动清理后台应用，导致自动记账功能失效。建议关闭电池优化以确保功能正常工作。",
+  "autoBillingCheckBattery": "检查电池优化状态",
+  "autoBillingBatteryWarning": "⚠️ 未关闭电池优化，应用可能会被系统自动清理，导致自动记账失效。建议点击上方\"去设置\"按钮关闭电池优化。",
+  "enableFailed": "启用失败",
+  "disableFailed": "禁用失败",
+  "iosAutoFeatureDesc": "通过iOS\"快捷指令\"应用，实现截图后自动识别支付信息并记账。设置后，每次截图都会自动触发识别。",
+  "iosAutoShortcutConfigTitle": "配置步骤：",
+  "iosAutoShortcutStep1": "打开\"快捷指令\"应用，点击右上角\"+\"创建新快捷指令",
+  "iosAutoShortcutStep2": "添加\"截屏\"操作",
+  "iosAutoShortcutStep3": "搜索并添加\"蜜蜂记账 - 截图自动记账\"操作",
+  "iosAutoShortcutStep4": "将\"蜜蜂记账\"的截图参数设置为上一步的\"截屏\"",
+  "iosAutoShortcutStep5": "（可选）在系统设置 > 辅助功能 > 触控 > 轻点背面中，绑定此快捷指令",
+  "iosAutoShortcutStep6": "完成！支付时双击手机背部即可快速记账",
+  "iosAutoShortcutRecommendedTip": "✅ 推荐：在\"轻点背面\"中绑定快捷指令后，支付时双击手机背部即可自动截图并识别记账，无需手动截图。",
+  "iosAutoBackTapTitle": "💡 双击背部快速触发（推荐）",
+  "iosAutoBackTapDesc": "设置 > 辅助功能 > 触控 > 轻点背面\n• 选择\"轻点两下\"或\"轻点三下\"\n• 选择刚创建的快捷指令\n• 完成后，支付时双击手机背面即可自动记账，无需截图",
+  "iosAutoTutorialTitle": "视频教程",
+  "iosAutoTutorialDesc": "查看详细配置视频教程",
+  "aiSettingsTitle": "AI小助手",
+  "aiSettingsSubtitle": "配置AI模型和识别策略",
+  "aiEnableTitle": "启用AI小助手",
+  "aiEnableSubtitle": "使用AI增强OCR识别准确度，提取金额、商家、时间等信息，并支持自然语言对话",
+  "aiEnableToastOn": "AI小助手已启用",
+  "aiEnableToastOff": "AI小助手已关闭",
+  "aiStrategyTitle": "执行策略",
+  "aiStrategyLocalFirst": "本地优先（推荐）",
+  "aiStrategyCloudFirst": "云端优先",
+  "aiStrategyCloudFirstDesc": "优先使用云端API，失败后降级到本地",
+  "aiStrategyLocalOnly": "仅本地",
+  "aiStrategyCloudOnly": "仅云端",
+  "aiStrategyCloudOnlyDesc": "只使用云端API，不下载模型",
+  "aiStrategyUnavailable": "本地模型训练中，敬请期待",
+  "aiStrategySwitched": "已切换: {strategy}",
+  "@aiStrategySwitched": {
+    "placeholders": {
+      "strategy": {
+        "type": "String"
+      }
+    }
+  },
+  "aiCloudApiKeyHint": "输入智谱AI的API Key",
+  "aiCloudApiKeyHintCustom": "输入API Key",
+  "aiCloudApiKeyHelper": "GLM-*-Flash模型完全免费",
+  "aiCloudApiGetKey": "获取API Key",
+  "aiCloudApiTutorial": "详细教程",
+  "aiCloudApiTestKey": "测试连接",
+  "aiChatConfigWarning": "未配置或配置错误智谱 API Key，AI 功能不可用",
+  "aiChatGoToSettings": "去设置",
+  "aiLocalModelTitle": "本地模型",
+  "aiLocalModelTraining": "训练中",
+  "aiLocalModelUnavailable": "本地模型训练中，暂不可用",
+  "aiOcrRecognizing": "正在识别账单...",
+  "aiOcrNoAmount": "未识别到有效金额，请手动记账",
+  "aiOcrNoLedger": "未找到账本",
+  "aiOcrSuccess": "✅ {type}账单创建成功 ¥{amount}",
+  "@aiOcrSuccess": {
+    "placeholders": {
+      "type": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "aiOcrFailed": "识别失败: {error}",
+  "@aiOcrFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "aiOcrCreateFailed": "创建账单失败",
+  "aiTypeIncome": "收入",
+  "aiTypeExpense": "支出",
+  "cloudSyncPageTitle": "云同步与备份",
+  "cloudSyncPageSubtitle": "管理云服务和数据同步",
+  "cloudSyncHint": "云同步只会同步账本数据（包括交易记录关联的账户、分类、标签），不包括未关联的分类、标签、账户，也不包括附件。附件请通过数据管理单独导入导出。",
+  "dataManagement": "数据管理",
+  "dataManagementDesc": "导入导出、分类账户管理",
+  "dataManagementPageTitle": "数据管理",
+  "dataManagementPageSubtitle": "管理账单数据和分类",
+  "dataManagementAttachmentHint": "还原数据时，请先导入附件包，再导入账本数据（CSV或云同步），以确保附件正确关联。",
+  "smartBilling": "智能记账",
+  "smartBillingDesc": "AI小助手、OCR扫描、自动记账",
+  "smartBillingPageTitle": "智能记账",
+  "smartBillingPageSubtitle": "AI和自动化记账功能",
+  "smartBillingGuideHint": "长按首页底部中间的 + 按钮，即可快速使用这些功能",
+  "smartBillingImageBilling": "图片记账",
+  "smartBillingImageBillingDesc": "从相册选择支付截图进行识别",
+  "smartBillingImageBillingGuide": "在首页长按底部中间的 + 按钮，选择「相册」即可使用图片记账功能。配置AI后可智能识别账单信息，未配置时仍可通过OCR识别文字。",
+  "smartBillingAIOptional": "AI 识别为可选功能，配置后可提高识别准确度",
+  "smartBillingCameraBilling": "拍照记账",
+  "smartBillingCameraBillingDesc": "拍摄支付截图进行识别",
+  "smartBillingCameraBillingGuide": "在首页长按底部中间的 + 按钮，选择「拍照」即可使用拍照记账功能。配置AI后可智能识别账单信息，未配置时仍可通过OCR识别文字。",
+  "smartBillingVoiceBilling": "语音记账",
+  "smartBillingVoiceBillingDesc": "通过语音输入快速记账",
+  "smartBillingVoiceBillingGuide": "在首页长按底部中间的 + 按钮，选择「语音」即可使用语音记账功能。语音记账需要通过AI将语音转为文字并提取账单信息。",
+  "smartBillingAIRequired": "语音记账必须配置 AI（智谱 GLM API），请先在上方配置 AI 设置",
+  "smartBillingAutoTags": "自动关联标签",
+  "smartBillingAutoTagsDesc": "智能记账时自动根据分类关联常用标签",
+  "smartBillingAutoAttachment": "自动添加附件",
+  "smartBillingAutoAttachmentDesc": "图片/拍照记账时自动将原图添加为附件",
+  "autoScreenshotBillingIosDesc": "通过快捷指令实现截图自动识别记账",
+  "automation": "自动化",
+  "automationDesc": "周期记账、记账提醒",
+  "automationPageTitle": "自动化功能",
+  "automationPageSubtitle": "周期记账和提醒设置",
+  "appearanceSettings": "外观设置",
+  "appearanceSettingsDesc": "主题、字体、语言设置",
+  "appearanceSettingsPageTitle": "外观设置",
+  "appearanceSettingsPageSubtitle": "个性化外观和显示",
+  "about": "关于",
+  "aboutDesc": "版本信息、帮助与反馈",
+  "aboutPageTitle": "关于",
+  "aboutPageSubtitle": "应用信息和帮助",
+  "mineRateApp": "给应用评分",
+  "mineRateAppSubtitle": "在App Store上为我们打分",
+  "aboutPageLoadingVersion": "加载版本号中...",
+  "aboutWebsite": "官方网站",
+  "aboutGitHubRepo": "GitHub 仓库",
+  "aboutWeChatGroup": "微信群",
+  "aboutWeChatGroupDesc": "点击查看二维码",
+  "aboutXiaohongshu": "小红书",
+  "aboutDouyin": "抖音",
+  "aboutSupportDevelopment": "支持开发",
+  "aboutSupportDevelopmentSubtitle": "请开发者喝杯咖啡",
+  "aboutRelatedProducts": "蜜蜂家族",
+  "aboutBeeDNS": "蜜蜂域名 BeeDNS",
+  "aboutBeeDNSSubtitle": "简洁高效的 DNS 管理工具",
+  "logCenterTitle": "日志中心",
+  "logCenterSubtitle": "查看应用运行日志",
+  "logCenterSearchHint": "搜索日志内容或标签...",
+  "logCenterFilterLevel": "日志级别",
+  "logCenterFilterPlatform": "平台",
+  "logCenterTotal": "全部",
+  "logCenterFiltered": "已过滤",
+  "logCenterEmpty": "暂无日志",
+  "logCenterExport": "导出",
+  "logCenterClear": "清空",
+  "logCenterExportFailed": "导出失败",
+  "logCenterClearConfirmTitle": "清空日志",
+  "logCenterClearConfirmMessage": "确定要清空所有日志吗？此操作不可恢复。",
+  "logCenterCleared": "日志已清空",
+  "logCenterCopied": "已复制到剪贴板",
+  "configImportExportTitle": "配置导入导出",
+  "configImportExportSubtitle": "备份和恢复应用配置",
+  "configImportExportInfoTitle": "功能说明",
+  "configImportExportInfoMessage": "此功能用于导出和导入应用配置，包括云服务配置、AI配置等。配置文件采用YAML格式，方便查看和编辑。\n\n⚠️ 配置文件包含敏感信息（如API密钥、密码等），请妥善保管。",
+  "configExportTitle": "导出配置",
+  "configExportSubtitle": "将当前配置导出为YAML文件",
+  "configExportShareSubject": "BeeCount 配置文件",
+  "configExportSuccess": "配置导出成功",
+  "configExportFailed": "配置导出失败",
+  "configImportTitle": "导入配置",
+  "configImportSubtitle": "从YAML文件恢复配置",
+  "configImportNoFilePath": "未选择文件",
+  "configImportConfirmTitle": "确认导入",
+  "configImportSuccess": "配置导入成功",
+  "configImportFailed": "配置导入失败",
+  "configImportRestartTitle": "需要重启",
+  "configImportRestartMessage": "配置已导入，部分配置需要重启应用后生效。",
+  "configImportExportIncludesTitle": "包含的配置项",
+  "configExportSavedTo": "已保存至: {path}",
+  "configExportViewContent": "查看内容",
+  "configExportCopyContent": "复制内容",
+  "configExportContentCopied": "已复制到剪贴板",
+  "configExportReadFileFailed": "读取文件失败",
+  "@configExportSavedTo": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "configIncludeLedgers": "账本",
+  "configIncludeSupabase": "Supabase 云服务配置",
+  "configIncludeWebdav": "WebDAV 云服务配置",
+  "configIncludeS3": "S3 云服务配置",
+  "configIncludeAI": "AI 智能识别配置",
+  "configIncludeAISubtitle": "服务商、能力绑定、模型设置等",
+  "configIncludeAppSettings": "应用设置（语言、外观、提醒、默认账户等）",
+  "configIncludeRecurringTransactions": "周期账单",
+  "configIncludeAccounts": "账户",
+  "configIncludeCategories": "分类",
+  "configIncludeTags": "标签",
+  "configIncludeBudgets": "预算",
+  "configIncludeOtherSettings": "其他设置",
+  "configIncludeOtherSettingsSubtitle": "包含云服务配置、AI配置、应用设置等",
+  "configExportSelectTitle": "选择导出内容",
+  "configExportPreviewTitle": "导出预览",
+  "configExportConfirmTitle": "确认导出",
+  "configImportSelectTitle": "选择导入内容",
+  "configImportPreviewTitle": "导入预览",
+  "ledgersLocal": "本地账本",
+  "ledgersRemote": "云端账本",
+  "ledgersEmpty": "暂无账本",
+  "ledgersRestoreAll": "全部恢复",
+  "ledgersSwitched": "已切换到账本\"{name}\"",
+  "@ledgersSwitched": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersDownloadTitle": "下载账本",
+  "ledgersDownloadMessage": "确认下载账本\"{name}\"到本地？",
+  "@ledgersDownloadMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersDownloading": "下载中...",
+  "ledgersDownloadSuccess": "账本\"{name}\"下载成功",
+  "@ledgersDownloadSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersDownload": "下载",
+  "ledgersDeleteRemote": "删除云端账本",
+  "ledgersDeleteRemoteConfirm": "删除云端账本",
+  "ledgersDeleteRemoteMessage": "确认删除云端账本\"{name}\"？此操作不可恢复。",
+  "@ledgersDeleteRemoteMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersDeleting": "删除中...",
+  "ledgersDeleteRemoteSuccess": "已删除云端账本",
+  "ledgersCannotDeleteLastOne": "无法删除最后一个账本",
+  "ledgersRestoreAllTitle": "批量恢复",
+  "ledgersRestoreAllMessage": "确认恢复所有云端账本？共 {count} 个。",
+  "@ledgersRestoreAllMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgersRestoring": "恢复中...",
+  "ledgersRestoreComplete": "恢复完成",
+  "ledgersRestoreResult": "成功: {success}，失败: {failed}",
+  "@ledgersRestoreResult": {
+    "placeholders": {
+      "success": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgersConflictTitle": "同步冲突",
+  "ledgersConflictMessage": "本地和云端账本数据不一致，请选择操作：",
+  "ledgersConflictLocalInfo": "本地：{count} 笔账单",
+  "@ledgersConflictLocalInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgersConflictRemoteInfo": "云端：{count} 笔账单",
+  "@ledgersConflictRemoteInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "ledgersConflictRemoteUpdated": "云端更新：{time}",
+  "@ledgersConflictRemoteUpdated": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersConflictLocalFingerprint": "本地指纹：{fp}",
+  "@ledgersConflictLocalFingerprint": {
+    "placeholders": {
+      "fp": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersConflictRemoteFingerprint": "云端指纹：{fp}",
+  "@ledgersConflictRemoteFingerprint": {
+    "placeholders": {
+      "fp": {
+        "type": "String"
+      }
+    }
+  },
+  "ledgersConflictUpload": "上传到云端",
+  "ledgersConflictDownload": "下载到本地",
+  "ledgersConflictUploading": "正在上传...",
+  "ledgersConflictDownloading": "正在下载...",
+  "ledgersConflictUploadSuccess": "上传成功",
+  "ledgersConflictDownloadSuccess": "下载成功，已合并 {inserted} 笔账单",
+  "@ledgersConflictDownloadSuccess": {
+    "placeholders": {
+      "inserted": {
+        "type": "int"
+      }
+    }
+  },
+  "storageManagementTitle": "存储空间管理",
+  "storageManagementSubtitle": "清理缓存释放空间",
+  "storageAIModels": "AI模型",
+  "storageAPKFiles": "安装包",
+  "storageNoData": "无数据",
+  "storageFiles": "个文件",
+  "storageHint": "点击项目可清理对应的缓存文件",
+  "storageClearConfirmTitle": "确认清理",
+  "storageClearAIModelsMessage": "确定要清理所有AI模型吗？大小: {size}",
+  "@storageClearAIModelsMessage": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "storageClearAPKMessage": "确定要清理所有安装包吗？大小: {size}",
+  "@storageClearAPKMessage": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "storageClearSuccess": "清理成功",
+  "accountNoTransactions": "暂无交易记录",
+  "accountTransactionHistory": "交易记录",
+  "accountTotalBalance": "净资产",
+  "accountTotalExpense": "总支出",
+  "accountTotalIncome": "总收入",
+  "accountCurrencyLocked": "该账户已有交易记录，不允许修改币种",
+  "accountDefaultIncomeTitle": "默认收入账户",
+  "accountDefaultIncomeDescription": "新建收入时自动选中此账户",
+  "accountDefaultExpenseTitle": "默认支出账户",
+  "accountDefaultExpenseDescription": "新建支出时自动选中此账户",
+  "accountDefaultNone": "不设置",
+  "accountDefaultSet": "已设置: {name}",
+  "@accountDefaultSet": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "commonNotice": "提示",
+  "transferTitle": "转账",
+  "transferIconSettings": "转账图标设置",
+  "transferIconSettingsDesc": "自定义转账记录的显示图标",
+  "transferFromAccount": "转出账户",
+  "transferToAccount": "转入账户",
+  "transferSelectAccount": "选择账户",
+  "transferCreateSuccess": "转账创建成功",
+  "transferUpdateSuccess": "转账更新成功",
+  "transferDifferentCurrencyError": "转账仅支持相同币种的账户",
+  "transferToPrefix": "转账至",
+  "transferFromPrefix": "来自",
+  "welcomeCategoryModeTitle": "选择分类模式",
+  "welcomeCategoryModeDescription": "选择更适合您使用习惯的分类方式",
+  "welcomeCategoryModeFlatTitle": "一级分类",
+  "welcomeCategoryModeFlatDescription": "简单直观，快速记账",
+  "welcomeCategoryModeFlatFeature1": "扁平化结构，操作简单",
+  "welcomeCategoryModeFlatFeature2": "适合习惯简单分类的用户",
+  "welcomeCategoryModeFlatFeature3": "快速选择，高效记账",
+  "welcomeCategoryModeHierarchicalTitle": "二级分类",
+  "welcomeCategoryModeHierarchicalDescription": "精细管理，清晰明了",
+  "welcomeCategoryModeHierarchicalFeature1": "支持父子分类层级",
+  "welcomeCategoryModeHierarchicalFeature2": "更细致的账单归类",
+  "welcomeCategoryModeHierarchicalFeature3": "适合需要精细管理的用户",
+  "welcomeCategoryModeNoneTitle": "不创建分类",
+  "welcomeCategoryModeNoneDescription": "完全自定义，按需添加",
+  "welcomeCategoryModeNoneFeature1": "不预置任何分类",
+  "welcomeCategoryModeNoneFeature2": "完全按自己需求创建",
+  "welcomeCategoryModeNoneFeature3": "适合有特殊分类需求的用户",
+  "welcomeExistingUserTitle": "老用户？",
+  "welcomeExistingUserButton": "导入配置",
+  "welcomeImportingConfig": "正在导入配置...",
+  "welcomeImportSuccess": "配置导入成功",
+  "welcomeImportFailed": "配置导入失败: {error}",
+  "@welcomeImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeImportNoFile": "未选择文件",
+  "welcomeImportAttachmentTitle": "导入附件",
+  "welcomeImportAttachmentDesc": "检测到您导入了配置文件，是否需要导入附件文件？",
+  "welcomeImportAttachmentButton": "选择附件文件",
+  "welcomeImportAttachmentSkip": "跳过",
+  "welcomeImportAttachmentSuccess": "附件导入完成：导入 {imported} 个",
+  "@welcomeImportAttachmentSuccess": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      }
+    }
+  },
+  "welcomeImportAttachmentFailed": "附件导入失败: {error}",
+  "@welcomeImportAttachmentFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeImportingAttachment": "正在导入附件...",
+  "iosVersionWarningTitle": "需要 iOS 16.0 或更高版本",
+  "iosVersionWarningDesc": "截图自动记账功能使用了 iOS 16 引入的 App Intents 框架。您的设备系统版本较低，暂不支持此功能。\n\n请升级到 iOS 16 或更高版本以使用此功能。",
+  "aiChatTitle": "AI助手",
+  "aiChatClearHistory": "清除对话历史",
+  "aiChatClearHistoryDialogTitle": "清除对话历史",
+  "aiChatClearHistoryDialogContent": "确定要清除所有对话记录吗?此操作不可恢复。",
+  "aiChatInputHint": "例如: 买了杯咖啡35块",
+  "aiChatThinking": "思考中...",
+  "aiChatHistoryCleared": "对话历史已清空",
+  "aiChatCopy": "复制",
+  "aiChatCopied": "已复制到剪贴板",
+  "aiChatDeleteMessageConfirm": "确定要删除这条消息吗？",
+  "aiChatMessageDeleted": "消息已删除",
+  "aiChatUndone": "已撤销",
+  "aiChatUndoFailed": "撤销失败",
+  "aiChatTransactionNotFound": "交易记录不存在",
+  "aiChatOpenEditorFailed": "打开编辑页面失败",
+  "aiChatSendFailed": "发送失败",
+  "aiQuickCommandFinancialHealthTitle": "财务健康分析",
+  "aiQuickCommandFinancialHealthDesc": "分析收支平衡和储蓄率",
+  "aiQuickCommandFinancialHealthPrompt": "请根据以下数据分析我的财务健康状况：\n\n[monthlyStats]\n\n[recentTrends]\n\n请从收支平衡、储蓄率、消费趋势等角度给出专业分析和建议。请用简体中文回复。",
+  "aiQuickCommandMonthlyExpenseTitle": "本月支出总结",
+  "aiQuickCommandMonthlyExpenseDesc": "月度支出分析和建议",
+  "aiQuickCommandMonthlyExpensePrompt": "请总结我本月的支出情况：\n\n[monthlyStats]\n\n[categoryStats]\n\n请分析主要支出类别，并给出节约开支的建议。请用简体中文回复。",
+  "aiQuickCommandCategoryAnalysisTitle": "分类占比分析",
+  "aiQuickCommandCategoryAnalysisDesc": "各分类支出占比和趋势",
+  "aiQuickCommandCategoryAnalysisPrompt": "请分析我的各分类支出占比：\n\n[categoryStats]\n\n请指出哪些分类支出过高，并给出优化建议。请用简体中文回复。",
+  "aiQuickCommandBudgetPlanningTitle": "预算规划建议",
+  "aiQuickCommandBudgetPlanningDesc": "基于历史数据的预算建议",
+  "aiQuickCommandBudgetPlanningPrompt": "请基于以下数据帮我制定下月预算：\n\n[monthlyStats]\n\n[recentTrends]\n\n请给出各分类的预算建议和注意事项。请用简体中文回复。",
+  "aiQuickCommandAbnormalExpenseTitle": "异常支出提醒",
+  "aiQuickCommandAbnormalExpenseDesc": "识别大额或异常支出",
+  "aiQuickCommandAbnormalExpensePrompt": "请检查我最近是否有异常支出：\n\n[recentTransactions]\n\n[monthlyStats]\n\n请指出可能的异常消费，并分析原因。请用简体中文回复。",
+  "aiQuickCommandSavingTipsTitle": "省钱小贴士",
+  "aiQuickCommandSavingTipsDesc": "根据消费习惯给建议",
+  "aiQuickCommandSavingTipsPrompt": "请根据我的消费习惯给出省钱建议：\n\n[categoryStats]\n\n[recentTrends]\n\n请提供3-5条实用的省钱技巧。请用简体中文回复。",
+  "billCardSuccess": "记账成功",
+  "billCardUndone": "已撤销",
+  "billCardAmount": "💰 金额",
+  "billCardCategory": "🏷️ 分类",
+  "billCardTime": "📅 时间",
+  "billCardNote": "📝 备注",
+  "billCardAccount": "💳 账户",
+  "billCardUndo": "撤销",
+  "billCardEdit": "修改",
+  "billCardUnknownLedger": "未知账本",
+  "donationTitle": "捐赠",
+  "donationSubtitle": "请我喝杯咖啡",
+  "donationEntrySubtitle": "支持应用持续开发",
+  "donationDescription": "说明",
+  "donationDescriptionDetail": "感谢您使用蜜蜂记账！如果这个应用对您有帮助，欢迎请开发者喝杯咖啡作为鼓励。您的支持是我持续改进的动力。",
+  "donationNoFeatures": "注: 打赏不会解锁任何功能，所有功能继续完全免费。",
+  "donationNoProducts": "暂无可用商品",
+  "donationThankYouTitle": "感谢支持！",
+  "donationThankYouMessage": "感谢您购买 {productName}！您的支持对我意义重大，我会继续努力改进蜜蜂记账，让它变得更好用！",
+  "@donationThankYouMessage": {
+    "placeholders": {
+      "productName": {
+        "type": "String"
+      }
+    }
+  },
+  "aiPromptEditTitle": "提示词编辑",
+  "aiPromptEditSubtitle": "自定义AI账单识别提示词",
+  "aiPromptAdvancedSettings": "高级设置",
+  "aiAdvancedSettingsDesc": "模型选择、执行策略、本地模型、提示词",
+  "aiPromptEditEntry": "提示词编辑",
+  "aiPromptEditEntryDesc": "自定义AI账单识别提示词，可分享给其他用户",
+  "aiPromptVariables": "变量说明",
+  "aiPromptVariablesHint": "点击展开查看可用变量",
+  "aiPromptContent": "提示词内容",
+  "aiPromptUnsaved": "未保存",
+  "aiPromptInputHint": "输入提示词...",
+  "aiPromptPreview": "预览",
+  "aiPromptSave": "保存",
+  "aiPromptSaved": "提示词已保存",
+  "aiPromptResetDefault": "恢复默认",
+  "aiPromptResetConfirmTitle": "恢复默认",
+  "aiPromptResetConfirmMessage": "确定要恢复默认提示词吗？您的自定义内容将会丢失。",
+  "aiPromptPasted": "已粘贴",
+  "aiPromptPreviewTitle": "提示词预览",
+  "aiPromptPreviewNote": "以上预览使用示例数据替换变量，实际运行时会使用真实数据",
+  "aiPromptVarInputSource": "输入来源描述，如\"从以下支付账单文本中\"",
+  "aiPromptVarCurrentTime": "当前日期和时间，如\"2025-01-15 14:30\"",
+  "aiPromptVarCurrentDate": "当前日期，如\"2025-01-15\"",
+  "aiPromptVarOcrText": "用户输入或OCR识别的文本内容",
+  "aiPromptVarCategories": "支出和收入分类列表",
+  "aiPromptVarAccounts": "用户的账户列表（可能为空）",
+  "aiModelTitle": "文本推理模型",
+  "aiVisionModelTitle": "视觉模型",
+  "aiModelFast": "快速",
+  "aiModelAccurate": "准确",
+  "aiModelSwitched": "已切换到 {modelName}",
+  "@aiModelSwitched": {
+    "placeholders": {
+      "modelName": {
+        "type": "String"
+      }
+    }
+  },
+  "aiUsingVisionDesc": "启用图像识别，以获得更高的识别精度",
+  "aiUnUsingVisionDesc": "已关闭图片识别，仅使用OCR文本",
+  "aiUploadImage": "上传图片到AI",
+  "aiUseVisionDesc": "使用视觉模型，识别更准确",
+  "aiUnUseVisionDesc": "仅使用文本模型分析OCR结果",
+  "aiCustomBaseUrlHelper": "OpenAI兼容的API地址，如 https://api.openai.com/v1",
+  "aiTextModelTitle": "文本模型",
+  "aiAudioModelTitle": "语音模型",
+  "tagManageTitle": "标签管理",
+  "tagManageSubtitle": "管理交易标签",
+  "tagManageEmpty": "暂无标签",
+  "tagManageEmptyHint": "点击右上角添加标签",
+  "tagManageGenerateDefault": "生成默认标签",
+  "tagManageGenerateDefaultConfirm": "确定要生成默认标签吗？已有同名标签不会被覆盖。",
+  "tagManageGenerateDefaultSuccess": "默认标签已生成",
+  "tagEditTitle": "编辑标签",
+  "tagAddTitle": "新增标签",
+  "tagNameLabel": "标签名称",
+  "tagNameHint": "请输入标签名称",
+  "tagNameRequired": "标签名称不能为空",
+  "tagNameDuplicate": "标签名称已存在",
+  "tagColorLabel": "标签颜色",
+  "tagCreateSuccess": "标签创建成功",
+  "tagUpdateSuccess": "标签更新成功",
+  "tagDeleteConfirmTitle": "删除标签",
+  "tagDeleteConfirmMessage": "确定要删除标签「{name}」吗？此操作不会影响已关联的交易记录。",
+  "@tagDeleteConfirmMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "tagDeleteSuccess": "标签已删除",
+  "tagSelectTitle": "选择标签",
+  "tagSelectHint": "可多选",
+  "tagSelectCreateNew": "新建标签",
+  "tagSelectRecentlyUsed": "最近使用",
+  "tagSelectAllTags": "全部标签",
+  "tagTransactionCount": "{count}笔",
+  "@tagTransactionCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagDetailTitle": "标签详情",
+  "tagDetailTotalCount": "交易笔数",
+  "tagDetailTotalExpense": "总支出",
+  "tagDetailTotalIncome": "总收入",
+  "tagDetailTransactionList": "关联交易",
+  "tagDetailNoTransactions": "暂无关联交易",
+  "tagDetailNoTransactionsHint": "使用此标签的交易将在此显示",
+  "tagNotFound": "标签不存在",
+  "tagDefaultMeituan": "美团",
+  "tagDefaultEleme": "饿了么",
+  "tagDefaultTaobao": "淘宝",
+  "tagDefaultJD": "京东",
+  "tagDefaultPDD": "拼多多",
+  "tagDefaultStarbucks": "星巴克",
+  "tagDefaultLuckin": "瑞幸咖啡",
+  "tagDefaultMcDonalds": "麦当劳",
+  "tagDefaultKFC": "肯德基",
+  "tagDefaultHema": "盒马",
+  "tagDefaultSams": "山姆",
+  "tagDefaultCostco": "Costco",
+  "tagDefaultBusinessTrip": "出差",
+  "tagDefaultTravel": "旅行",
+  "tagDefaultDining": "聚餐",
+  "tagDefaultOnlineShopping": "网购",
+  "tagDefaultDaily": "日常",
+  "tagDefaultReimbursement": "报销",
+  "tagDefaultRefundable": "可退款",
+  "tagDefaultRefunded": "已退款",
+  "tagDefaultVoiceBilling": "语音记账",
+  "tagDefaultImageBilling": "图片记账",
+  "tagDefaultCameraBilling": "拍照记账",
+  "tagDefaultAiBilling": "AI记账",
+  "tagShare": "分享标签",
+  "tagImport": "导入标签",
+  "tagClearUnused": "清理未使用",
+  "tagShareSuccess": "已保存到 {path}",
+  "@tagShareSuccess": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "tagShareSubject": "BeeCount 标签配置",
+  "tagShareFailed": "分享失败",
+  "tagImportInvalidFile": "请选择 YAML 配置文件",
+  "tagImportNoTags": "文件中没有标签数据",
+  "tagImportModeTitle": "选择导入模式",
+  "tagImportModeMerge": "合并",
+  "tagImportModeMergeDesc": "保留现有标签，新增不存在的",
+  "tagImportModeOverwrite": "覆盖",
+  "tagImportModeOverwriteDesc": "清空未使用标签后导入",
+  "tagImportSuccess": "导入成功",
+  "tagImportFailed": "导入失败",
+  "tagClearUnusedEmpty": "没有未使用的标签",
+  "tagClearUnusedTitle": "清理未使用标签",
+  "tagClearUnusedMessage": "确定要删除 {count} 个未使用的标签吗？",
+  "@tagClearUnusedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagClearUnusedSuccess": "已删除 {count} 个标签",
+  "@tagClearUnusedSuccess": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tagClearUnusedFailed": "清理失败",
+  "tabDiscover": "发现",
+  "discoverTitle": "发现",
+  "discoverBudget": "预算管理",
+  "discoverBudgetSubtitle": "设置和追踪支出预算",
+  "discoverBudgetEmpty": "设置预算，控制支出",
+  "discoverAccounts": "账户总览",
+  "discoverAccountsEmpty": "添加账户，追踪资金流向",
+  "discoverAccountsTotal": "总余额",
+  "discoverAccountsCount": "{count} 个账户",
+  "@discoverAccountsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "discoverCommonFeatures": "常用功能",
+  "discoverAISettings": "AI设置",
+  "discoverCategory": "分类管理",
+  "discoverTags": "标签管理",
+  "discoverImport": "导入",
+  "discoverExport": "导出",
+  "discoverHelp": "使用帮助",
+  "discoverConfigManagement": "配置管理",
+  "discoverAutoBilling": "自动记账",
+  "homeSwitchLedger": "选择账本",
+  "homeManageLedgers": "管理账本",
+  "budgetTitle": "预算管理",
+  "budgetEmptyHint": "还没有设置预算",
+  "budgetAddTotal": "添加总预算",
+  "budgetMonthlyBudget": "本月预算",
+  "budgetUsed": "已用",
+  "budgetRemaining": "剩余",
+  "budgetDaysRemaining": "剩余 {days} 天",
+  "@budgetDaysRemaining": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "budgetDailyAvailable": "日均可用 ¥{amount}",
+  "@budgetDailyAvailable": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "budgetCategoryBudgets": "分类预算",
+  "budgetEditTitle": "编辑预算",
+  "budgetAddTitle": "添加预算",
+  "budgetTypeTotalLabel": "总预算",
+  "budgetTypeCategoryLabel": "分类预算",
+  "budgetAmountLabel": "预算金额",
+  "budgetAmountHint": "请输入预算金额",
+  "budgetCategoryLabel": "选择分类",
+  "budgetCategoryHint": "请选择预算分类",
+  "budgetStartDayLabel": "起始日",
+  "budgetPeriodLabel": "周期",
+  "budgetSaveSuccess": "预算保存成功",
+  "budgetDeleteConfirm": "确定删除此预算？",
+  "budgetDeleteSuccess": "预算已删除",
+  "attachmentAdd": "添加图片",
+  "attachmentTakePhoto": "拍照",
+  "attachmentChooseFromGallery": "从相册选择",
+  "attachmentMaxReached": "已达到最大附件数量",
+  "attachmentDeleteConfirm": "确定删除此附件？",
+  "attachmentCount": "{count}张图片",
+  "@attachmentCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "commonDeleted": "已删除",
+  "attachmentExportTitle": "导出附件",
+  "attachmentExportSubtitle": "将所有附件打包导出为压缩文件",
+  "attachmentImportTitle": "导入附件",
+  "attachmentImportSubtitle": "从压缩文件导入附件",
+  "attachmentExportEmpty": "没有附件需要导出",
+  "attachmentExportProgress": "正在导出附件 ({current}/{total})",
+  "@attachmentExportProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "attachmentExportProgressDetail": "正在导出 {attachmentCount} 个附件 + {iconCount} 个图标 ({current}/{total})",
+  "@attachmentExportProgressDetail": {
+    "placeholders": {
+      "attachmentCount": {
+        "type": "int"
+      },
+      "iconCount": {
+        "type": "int"
+      },
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "attachmentExportSuccess": "附件导出成功",
+  "attachmentExportSavedTo": "已保存到: {path}",
+  "@attachmentExportSavedTo": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "attachmentImportConflictStrategy": "冲突处理策略",
+  "attachmentImportConflictSkip": "跳过已存在的附件",
+  "attachmentImportConflictOverwrite": "覆盖已存在的附件",
+  "attachmentImportProgress": "正在导入附件 ({current}/{total})",
+  "@attachmentImportProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "attachmentImportResult": "导入 {imported} 张，跳过 {skipped} 张，覆盖 {overwritten} 张，失败 {failed} 张",
+  "@attachmentImportResult": {
+    "placeholders": {
+      "imported": {
+        "type": "int"
+      },
+      "skipped": {
+        "type": "int"
+      },
+      "overwritten": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      }
+    }
+  },
+  "attachmentImportFailed": "附件导入失败",
+  "attachmentArchiveInfo": "{count} 个附件，导出于 {date}",
+  "@attachmentArchiveInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "attachmentStartImport": "开始导入",
+  "attachmentPreview": "预览附件",
+  "attachmentPreviewSubtitle": "共 {count} 张图片",
+  "@attachmentPreviewSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "attachmentPreviewEmpty": "暂无附件",
+  "attachmentExportPreviewTitle": "导出预览",
+  "attachmentImportPreviewTitle": "导入预览",
+  "shortcutsGuide": "快捷指令",
+  "shortcutsGuideDesc": "快速打开语音、拍照等记账方式",
+  "shortcutsIntroTitle": "快速记账",
+  "shortcutsIntroDesc": "使用快捷指令，可以在桌面直接打开语音记账、拍照记账等功能，无需先打开 App。",
+  "availableShortcuts": "可用快捷指令",
+  "shortcutVoice": "语音记账",
+  "shortcutVoiceDesc": "通过语音快速记录账单",
+  "shortcutImage": "图片记账",
+  "shortcutImageDesc": "从相册选择图片识别账单",
+  "shortcutCamera": "拍照记账",
+  "shortcutCameraDesc": "拍照识别账单",
+  "shortcutUrlCopied": "链接已复制到剪贴板",
+  "howToAddShortcut": "如何添加快捷指令",
+  "iosShortcutStep1": "打开「快捷指令」App",
+  "iosShortcutStep2": "点击右上角「+」新建快捷指令",
+  "iosShortcutStep3": "添加「打开 URL」操作",
+  "iosShortcutStep4": "粘贴上方复制的链接（如 beecount://voice）",
+  "iosShortcutStep5": "保存后，可添加到桌面使用",
+  "androidShortcutStep1": "下载支持创建快捷方式的应用（如 Shortcut Maker）",
+  "androidShortcutStep2": "选择「URL 快捷方式」",
+  "androidShortcutStep3": "粘贴上方复制的链接（如 beecount://voice）",
+  "androidShortcutStep4": "设置图标和名称后添加到桌面",
+  "shortcutsTip": "小贴士",
+  "shortcutsTipDesc": "快捷指令需要配合 AI 功能使用。请确保已开启智能识别并配置好 API Key。",
+  "shortcutOpenShortcutsApp": "打开快捷指令 App",
+  "shortcutAutoAdd": "自动记账接口",
+  "shortcutAutoAddDesc": "通过 URL 参数自动创建账单，适合与快捷指令、自动化工具配合使用。",
+  "shortcutAutoAddExample": "示例链接：",
+  "shortcutAutoAddParams": "支持的参数：",
+  "shortcutParamAmount": "金额（必填）",
+  "shortcutParamType": "类型：expense（支出）/ income（收入）/ transfer（转账）",
+  "shortcutParamCategory": "分类名称（需与App中已有分类匹配）",
+  "shortcutParamNote": "备注",
+  "shortcutParamAccount": "账户名称（需与App中已有账户匹配）",
+  "shortcutParamTags": "标签（多个用逗号分隔）",
+  "shortcutParamDate": "日期（ISO格式，如 2024-01-15）",
+  "quickActionImage": "图片记账",
+  "quickActionCamera": "拍照记账",
+  "quickActionVoice": "语音记账",
+  "quickActionAiChat": "AI 小助手",
+  "calendarTitle": "日历",
+  "calendarToday": "今天",
+  "calendarNoTransactions": "当天无交易",
+  "commonUncategorized": "未分类",
+  "commonSaved": "已保存",
+  "aiProviderManageTitle": "服务商管理",
+  "aiProviderManageSubtitle": "管理AI服务商配置",
+  "aiProviderAdd": "添加服务商",
+  "aiProviderBuiltIn": "内置",
+  "aiProviderEmpty": "暂无服务商配置",
+  "aiProviderNoApiKey": "未配置 API Key",
+  "aiProviderTapToEdit": "点击编辑",
+  "aiProviderDeleteTitle": "删除服务商",
+  "aiProviderDeleteConfirm": "确定删除服务商「{name}」吗？使用该服务商的能力将自动切换到默认服务商。",
+  "@aiProviderDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "aiProviderDeleted": "服务商已删除",
+  "aiProviderEditTitle": "编辑服务商",
+  "aiProviderAddTitle": "添加服务商",
+  "aiProviderBasicInfo": "基本信息",
+  "aiProviderName": "服务商名称",
+  "aiProviderNameHint": "如：硅基流动、DeepSeek",
+  "aiProviderNameRequired": "请输入服务商名称",
+  "aiProviderBaseUrlRequired": "请输入 Base URL",
+  "aiProviderModels": "模型配置",
+  "aiProviderModelsHint": "留空的能力将无法使用该服务商",
+  "aiCapabilityText": "文本",
+  "aiCapabilityVision": "视觉",
+  "aiCapabilitySpeech": "语音",
+  "aiCapabilitySelectTitle": "能力绑定",
+  "aiCapabilitySelectSubtitle": "为每个AI能力选择服务商",
+  "aiCapabilityTextChat": "文本对话",
+  "aiCapabilityTextChatDesc": "用于AI对话和文本账单提取",
+  "aiCapabilityImageUnderstand": "图片理解",
+  "aiCapabilityImageUnderstandDesc": "用于图片账单识别",
+  "aiCapabilitySpeechToText": "语音转文字",
+  "aiCapabilitySpeechToTextDesc": "用于语音记账",
+  "aiProviderTestRun": "点击测试",
+  "aiProviderTestRunning": "测试中...",
+  "aiProviderTestSuccess": "测试通过",
+  "aiProviderTestFailed": "测试失败",
+  "aiProviderTestAll": "一键测试全部",
+  "aiProviderTestAllRetry": "重新测试",
+  "aiModelInputHelper": "留空则使用默认模型"
+}
