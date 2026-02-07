@@ -7,39 +7,34 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1. 下载代码
       - uses: actions/checkout@v4
 
-      # 关键点 1：将 JDK 降级到 11，兼容性更好
-      - name: set up JDK 11
+      # 2. 设置 Java 17 (修复你刚才看到的错误)
+      - name: set up JDK 17
         uses: actions/setup-java@v4
         with:
-          java-version: '11'
+          java-version: '17'
           distribution: 'temurin'
-          cache: gradle
 
-      - name: Diagnostic & Build
-        run: |
-          # 关键点 2：列出文件，如果报错我们要看这里
-          echo "=== 正在检查文件结构 ==="
-          ls -R
-          
-          # 关键点 3：寻找 build.gradle 所在目录
-          BUILD_FILE=$(find . -name "build.gradle" | head -n 1)
-          if [ -z "$BUILD_FILE" ]; then
-            echo "❌ 错误：找不到 build.gradle，请确认这是安卓项目！"
-            exit 1
-          fi
-          
-          PROJECT_ROOT=$(dirname "$BUILD_FILE")
-          cd "$PROJECT_ROOT"
-          echo "✅ 正在目录 $PROJECT_ROOT 下开始打包..."
+      # 3. 设置 Flutter 环境 (这是最关键的一步)
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
 
-          # 关键点 4：如果没有钥匙，自动生成一把
-          if [ ! -f "gradlew" ]; then
-            echo "⚠️ 找不到 gradlew，正在尝试自动生成..."
-            gradle wrapper
-          fi
-          chmod +x gradlew
-          
-          # 关键点 5：开始执行
-          ./gradlew assembleDebug --stacktrace
+      # 4. 下载 Flutter 依赖包
+      - name: Get dependencies
+        run: flutter pub get
+
+      # 5. 正式打包 APK
+      - name: Build APK
+        # 使用 debug 模式打包最稳，不需要签名
+        run: flutter build apk --debug
+
+      # 6. 上传安装包
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: My-BeeCount-APK
+          path: build/app/outputs/flutter-apk/*.apk
