@@ -1,0 +1,43 @@
+name: 001-TEST-VERSION
+
+on: 
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Find and Build APK
+        run: |
+          # 第一步：先看看文件到底在哪里
+          echo "正在列出所有文件结构..."
+          ls -R
+          
+          # 第二步：寻找 gradlew 钥匙并赋予权限
+          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
+          if [ -z "$GRADLEW_PATH" ]; then
+            echo "错误：在项目中找不到 gradlew 文件！"
+            exit 1
+          fi
+          
+          echo "找到钥匙在：$GRADLEW_PATH"
+          chmod +x "$GRADLEW_PATH"
+          
+          # 第三步：进入对应目录开始打包
+          DIR_PATH=$(dirname "$GRADLEW_PATH")
+          cd "$DIR_PATH"
+          ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: My-BeeCount-APK
+          path: "**/*.apk"
