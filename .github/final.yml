@@ -18,7 +18,7 @@ jobs:
 
       - name: Find and Build APK
         run: |
-          # 1. 自动寻找项目中的 gradlew 文件
+          # 1. 自动寻找 gradlew 文件的位置
           GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
           
           if [ -z "$GRADLEW_PATH" ]; then
@@ -28,17 +28,17 @@ jobs:
           
           echo "✅ 找到钥匙在：$GRADLEW_PATH"
           
-          # 2. 赋予执行权限
+          # 2. 赋予权限
           chmod +x "$GRADLEW_PATH"
           
-          # 3. 进入钥匙所在的文件夹并开始打包
-          BASE_DIR=$(dirname "$GRADLEW_PATH")
-          cd "$BASE_DIR"
+          # 3. 进入所在目录并开始打包
+          PROJECT_ROOT=$(dirname "$GRADLEW_PATH")
+          cd "$PROJECT_ROOT"
           ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: My-BeeCount-APK
-          # 自动搜寻生成的所有 apk 文件并上传
+          # 这样写能保证无论 APK 生成在哪都能被抓到
           path: "**/*.apk"
