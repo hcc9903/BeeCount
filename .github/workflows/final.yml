@@ -14,31 +14,30 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: gradle
 
-      - name: Find and Build APK
+      - name: Diagnostic & Build
         run: |
-          # 1. 自动寻找 gradlew 文件的位置
-          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
+          # 1. 看看盒子里到底装了什么
+          echo "=== 正在列出项目文件结构 ==="
+          ls -R
           
-          if [ -z "$GRADLEW_PATH" ]; then
-            echo "❌ 错误：在整个项目中都找不到 gradlew 文件！"
+          # 2. 检查是否有 build.gradle (安卓项目的标志)
+          BUILD_FILE=$(find . -name "build.gradle" | head -n 1)
+          if [ -z "$BUILD_FILE" ]; then
+            echo "❌ 错误：这好像不是一个安卓 Gradle 项目，找不到 build.gradle！"
             exit 1
           fi
           
-          echo "✅ 找到钥匙在：$GRADLEW_PATH"
-          
-          # 2. 赋予权限
-          chmod +x "$GRADLEW_PATH"
-          
-          # 3. 进入所在目录并开始打包
-          PROJECT_ROOT=$(dirname "$GRADLEW_PATH")
+          # 3. 如果没有钥匙，我们直接用系统自带的 gradle 强制打包
+          echo "✅ 发现项目文件，开始打包..."
+          PROJECT_ROOT=$(dirname "$BUILD_FILE")
           cd "$PROJECT_ROOT"
-          ./gradlew assembleDebug
+          
+          # 直接使用系统 gradle 命令，不依赖 gradlew
+          gradle assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: My-BeeCount-APK
-          # 这样写能保证无论 APK 生成在哪都能被抓到
           path: "**/*.apk"
