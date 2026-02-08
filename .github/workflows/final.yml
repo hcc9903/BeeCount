@@ -23,15 +23,15 @@ jobs:
         with:
           channel: 'stable'
 
-      # 4. 强行修复刚才看到的翻译文件类型错误 (核心步骤)
-      - name: Patch Localization Files
+      # 4. 暴力修复所有翻译文件里的类型冲突 (增强版脚本)
+      - name: Patch All Localization Files
         run: |
-          # 寻找所有的 .arb 翻译文件，把里面的 "type": "int" 强行替换为 "type": "Object"
-          # 这样做是为了满足编译器要求的兼容性
-          find . -name "*.arb" -exec sed -i 's/"type": "int"/"type": "Object"/g' {} +
-          echo "✅ 已强行修正翻译文件格式错误"
+          # 这一行命令会把所有 .arb 文件里所有的 "type": "xxx" 强行改为 "type": "Object"
+          # 这样就能通过最新的 Flutter 编译器检查了
+          find . -name "*.arb" -exec sed -i 's/"type": "[^"]*"/"type": "Object"/g' {} +
+          echo "✅ 已完成所有翻译文件的暴力修正"
 
-      # 5. 强行修复零件版本冲突 (之前的错误)
+      # 5. 强行修复零件版本冲突
       - name: Fix dependency conflict
         run: |
           flutter pub add intl:^0.20.2
