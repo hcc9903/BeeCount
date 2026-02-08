@@ -9,54 +9,45 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 1. 设置 Java 环境 (Gradle 运行必需)
+      # 1. 设置 Java 17 (老版本 Flutter 也需要它)
       - name: set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      # 2. 设置 Flutter 环境
+      # 2. 🛠️ 核心操作：强制降低 Flutter 引擎到 3.10.0
+      # 这个版本依然支持 --no-sound-null-safety
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
+          flutter-version: '3.10.0'
           channel: 'stable'
 
-      # 3. 🛠️ 执行“代码大手术” (针对报错精准修复)
+      # 3. 🛠️ 执行代码手术 (保留之前的全部补丁)
       - name: Run Intensive Surgery
         run: |
-          # 修正 NDK 版本冲突 (按照报错提示精准插入)
           sed -i '/android {/a \    ndkVersion = "28.2.13676358"' android/app/build.gradle
-          
-          # 修正 CardTheme 报错 (这是导致刚才失败的主因)
-          # 把旧的 CardTheme( 替换成符合新标准的 CardThemeData(
-          find . -name "*.dart" -exec sed -i 's/cardTheme: CardTheme(/cardTheme: CardThemeData(/g' {} +
-          find . -name "*.dart" -exec sed -i 's/CardTheme(/CardThemeData(/g' {} +
-          
-          # 修正翻译文件中的类型冲突 (int/String -> Object)
-          find . -name "*.arb" -exec sed -i 's/"type": "[^"]*"/"type": "Object"/g' {} +
-          
-          # 删除过时的配置项
           sed -i '/synthetic-package/d' l10n.yaml || true
-          
-          echo "✅ 所有的代码手术已经完成，老项目现在适配新环境了"
+          find . -name "*.dart" -exec sed -i 's/CardTheme(/CardThemeData(/g' {} +
+          find . -name "*.arb" -exec sed -i 's/"type": "[^"]*"/"type": "Object"/g' {} +
+          echo "✅ 针对旧引擎的兼容补丁已完成"
 
-      # 4. 获取零件并强制升级 (解决 intl 冲突)
+      # 4. 解决零件冲突
       - name: Fix Dependencies
         run: |
-          flutter pub add intl:^0.20.2
+          flutter pub add intl:^0.19.0 # 针对 3.10 版本，intl 0.19.0 更合适
           flutter pub upgrade
 
-      # 5. 正式打包 APK
+      # 5. 正式打包 APK (现在这个参数有效了)
       - name: Build APK
         run: |
           flutter pub get
-          # 加上 --no-sound-null-safety 以兼容可能存在的旧库
           flutter build apk --debug --no-sound-null-safety
 
-      # 6. 全盘搜寻并上传 APK
+      # 6. 上传 APK
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: My-Finished-BeeCount-APK
+          name: My-Legacy-BeeCount-APK
           path: "**/*.apk"
