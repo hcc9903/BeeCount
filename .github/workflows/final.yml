@@ -7,53 +7,60 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1. 下载代码
       - uses: actions/checkout@v4
 
-      # 1. 设置 Java 17 (Gradle 运行必需)
+      # 2. 设置 Java 环境 (必须是 17)
       - name: set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      # 2. 设置 Flutter 环境
+      # 3. 设置 Flutter 环境
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
 
-      # 3. 🛠️ 执行全套“代码手术”
-      - name: Run Super Patch
+      # 4. 🛠️ 执行全套“暴力手术”
+      - name: Run Intensive Patch
         run: |
-          # 修正 NDK 版本冲突
+          # 强行修正 NDK 版本 (使用 perl 确保精准插入)
+          perl -i -pe 'print "        ndkVersion = \"28.2.13676358\"\n" if /externalNativeBuild/ && !$done++' android/app/build.gradle
+          # 如果上面没插进去，在 android { 后面直接插
           sed -i '/android {/a \    ndkVersion = "28.2.13676358"' android/app/build.gradle
           
-          # 修正过时的配置项
+          # 强行升级 compileSdkVersion 和 targetSdkVersion 到 34 (现在的标准)
+          sed -i 's/compileSdkVersion [0-9]*/compileSdkVersion 34/g' android/app/build.gradle
+          sed -i 's/targetSdkVersion [0-9]*/targetSdkVersion 34/g' android/app/build.gradle
+          
+          # 修正过时的 l10n 配置
           sed -i '/synthetic-package/d' l10n.yaml
           
-          # 修正代码中的 API 变更 (CardTheme -> CardThemeData)
-          sed -i 's/CardTheme(/CardThemeData(/g' lib/theme.dart
+          # 修正代码中的过时 API (CardTheme)
+          find . -name "*.dart" -exec sed -i 's/CardTheme(/CardThemeData(/g' {} +
           
-          # 修正翻译文件中的类型冲突 (int/String -> Object)
+          # 修正翻译文件中的类型冲突
           find . -name "*.arb" -exec sed -i 's/"type": "[^"]*"/"type": "Object"/g' {} +
           
-          echo "✅ 所有代码手术已完成"
+          echo "✅ 暴力手术已完成"
 
-      # 4. 🛠️ 解决零件版本冲突 (解决本次报错的关键)
-      - name: Fix intl Version
+      # 5. 解决零件版本冲突
+      - name: Fix Dependencies
         run: |
           flutter pub add intl:^0.20.2
           flutter pub upgrade
 
-      # 5. 获取依赖并打包
+      # 6. 正式打包 APK
       - name: Build APK
         run: |
-          flutter pub get
-          flutter build apk --debug
+          # 使用 --no-pub 避免再次检查，加上 --debug 提高兼容性
+          flutter build apk --debug --no-pub
 
-      # 6. 上传 APK
+      # 7. 搜索并上传 APK (即使工具报错说找不到，我们也手动搜)
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: My-BeeCount-APK
-          path: build/app/outputs/flutter-apk/*.apk
+          path: "**/*.apk" # 扫描所有文件夹寻找生成的 apk
