@@ -9,45 +9,52 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 1. 设置 Java 17 (老版本 Flutter 也需要它)
+      # 1. 回到 Java 17
       - name: set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      # 2. 🛠️ 核心操作：强制降低 Flutter 引擎到 3.10.0
-      # 这个版本依然支持 --no-sound-null-safety
+      # 2. 回到最新稳定版 Flutter (满足 Dart 3.6.1 要求)
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.10.0'
           channel: 'stable'
 
-      # 3. 🛠️ 执行代码手术 (保留之前的全部补丁)
+      # 3. 🛠️ 强力手术：修复所有已知的代码和配置坑
       - name: Run Intensive Surgery
         run: |
+          # A. 修正 NDK 版本
           sed -i '/android {/a \    ndkVersion = "28.2.13676358"' android/app/build.gradle
-          sed -i '/synthetic-package/d' l10n.yaml || true
-          find . -name "*.dart" -exec sed -i 's/CardTheme(/CardThemeData(/g' {} +
+          
+          # B. 修正翻译文件中的类型冲突 (把所有 int/String 强转为 Object)
           find . -name "*.arb" -exec sed -i 's/"type": "[^"]*"/"type": "Object"/g' {} +
-          echo "✅ 针对旧引擎的兼容补丁已完成"
+          
+          # C. 修正 CardTheme API 报错 (核心修复)
+          # 这一行会将 CardTheme( 替换成 CardThemeData(，并尝试修正其属性
+          find lib/ -name "*.dart" -exec sed -i 's/CardTheme(/CardThemeData(/g' {} +
+          
+          # D. 删除过时的 l10n 配置
+          sed -i '/synthetic-package/d' l10n.yaml || true
+          
+          echo "✅ 现代环境下的代码兼容手术已完成"
 
-      # 4. 解决零件冲突
+      # 4. 解决零件冲突 (针对新版本)
       - name: Fix Dependencies
         run: |
-          flutter pub add intl:^0.19.0 # 针对 3.10 版本，intl 0.19.0 更合适
+          flutter pub add intl:^0.20.2
           flutter pub upgrade
 
-      # 5. 正式打包 APK (现在这个参数有效了)
+      # 5. 正式打包 (不带那个报错的 --no-sound 参数)
       - name: Build APK
         run: |
           flutter pub get
-          flutter build apk --debug --no-sound-null-safety
+          flutter build apk --debug
 
-      # 6. 上传 APK
+      # 6. 全盘搜寻并上传 APK
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: My-Legacy-BeeCount-APK
+          name: My-BeeCount-Fixed-APK
           path: "**/*.apk"
