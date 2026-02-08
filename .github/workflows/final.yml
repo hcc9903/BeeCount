@@ -23,10 +23,31 @@ jobs:
         with:
           channel: 'stable'
 
-      # 4. 关键步骤：强行修复零件版本冲突
+      # 4. 强行修复刚才看到的翻译文件类型错误 (核心步骤)
+      - name: Patch Localization Files
+        run: |
+          # 寻找所有的 .arb 翻译文件，把里面的 "type": "int" 强行替换为 "type": "Object"
+          # 这样做是为了满足编译器要求的兼容性
+          find . -name "*.arb" -exec sed -i 's/"type": "int"/"type": "Object"/g' {} +
+          echo "✅ 已强行修正翻译文件格式错误"
+
+      # 5. 强行修复零件版本冲突 (之前的错误)
       - name: Fix dependency conflict
         run: |
           flutter pub add intl:^0.20.2
           flutter pub upgrade
 
-      # 5. 获取所有零件
+      # 6. 获取所有零件
+      - name: Get dependencies
+        run: flutter pub get
+
+      # 7. 正式打包 APK
+      - name: Build APK
+        run: flutter build apk --debug
+
+      # 8. 上传安装包
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: My-BeeCount-APK
+          path: build/app/outputs/flutter-apk/*.apk
