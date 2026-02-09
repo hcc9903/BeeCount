@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜜蜂记账 - 登录</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Syne:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="honeycomb"></div>
+        <div class="glow-sphere sphere-1"></div>
+        <div class="glow-sphere sphere-2"></div>
+    </div>
+
+    <main class="login-container">
+        <div class="logo-section">
+            <div class="logo-icon">🐝</div>
+            <h1 class="logo-text">黄成财专业版</h1>
+        </div>
+
+        <div class="glass-card">
+            <h2 class="card-title">欢迎回来</h2>
+            <p class="card-subtitle">请登录您的账户以继续</p>
+
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <label for="username">用户名</label>
+                    <div class="input-wrapper">
+                        <span class="icon">👤</span>
+                        <input type="text" id="username" placeholder="请输入用户名" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">密码</label>
+                    <div class="input-wrapper">
+                        <span class="icon">🔒</span>
+                        <input type="password" id="password" placeholder="请输入密码" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        记住我
+                    </label>
+                    <a href="#" class="forgot-password">忘记密码？</a>
+                </div>
+
+                <button type="submit" class="submit-btn" id="loginBtn">
+                    <span class="btn-text">立即登录</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </form>
+
+            <div id="errorMsg" class="error-message"></div>
+        </div>
+
+        <footer class="login-footer">
+            <p>还没有账户？ <a href="#">立即申请</a></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

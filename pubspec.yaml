@@ -73,6 +73,7 @@ dependencies:
     path: packages/flutter_cloud_sync_s3
   quick_actions: ^1.1.0
   table_calendar: ^3.1.0
+  webview_flutter: ^4.9.0
 
 dev_dependencies:
   flutter_test:
@@ -106,6 +107,10 @@ flutter:
     - assets/logo2.png
     - assets/icons/ai.svg
     - assets/images/
+    - assets/web/
+    - assets/web/index.html
+    - assets/web/style.css
+    - assets/web/script.js
   # 字体已移动到可选依赖，使用系统字体以减少应用体积
   # fonts:
   #   - family: Inter

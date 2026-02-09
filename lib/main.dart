@@ -13,6 +13,7 @@ import 'utils/notification_factory.dart';
 import 'pages/auth/splash_page.dart';
 import 'pages/auth/welcome_page.dart';
 import 'pages/auth/pro_login_page.dart';
+import 'pages/auth/webview_login_page.dart';
 import 'services/system/reminder_monitor_service.dart';
 import 'services/platform/screenshot_monitor_service.dart';
 import 'services/platform/image_share_handler_service.dart';
@@ -377,7 +378,7 @@ class MainApp extends ConsumerWidget {
     // ⭐ 黄成财专业版：检查授权状态
     final isProAuthorized = ref.watch(proAuthStatusProvider);
     if (!isProAuthorized) {
-      return const ProLoginPage();
+      return const WebViewLoginPage();
     }
 
     // 欢迎页面完成后，根据初始化状态显示对应页面
