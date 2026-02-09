@@ -139,14 +139,17 @@ android {
     // 当存在 flavors 时，assembleDebug 会聚合构建所有 debug 变体（devDebug、prodDebug），
     // 这会让 Flutter 工具无法确定唯一 APK 路径。这里忽略 prodDebug，仅保留 devDebug，
     // 从而让不带 --flavor 的 `flutter run` 正常工作并默认使用 dev。
-/*
     variantFilter { variant ->
         def names = variant.flavors*.name
+        // 在 Debug 模式下忽略 prod 变体，仅保留 devDebug
         if (variant.buildType.name == 'debug' && names.contains('prod')) {
             setIgnore(true)
         }
+        // 在 Release 模式下忽略 dev 变体，仅保留 prodRelease
+        if (variant.buildType.name == 'release' && names.contains('dev')) {
+            setIgnore(true)
+        }
     }
-*/
 }
 
 // 自定义 Release APK 命名：app-<flavor>-release-v<versionName>(<versionCode>).apk
