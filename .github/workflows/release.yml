@@ -200,8 +200,8 @@ jobs:
           VERSION="${{ steps.meta.outputs.tag_name }}"
           cd build/app/outputs
           # 重命名 APK
-          if [ -f flutter-apk/app-prod-release.apk ]; then
-            mv flutter-apk/app-prod-release.apk flutter-apk/beecount-${VERSION}.apk
+          if [ -f flutter-apk/app-release.apk ]; then
+       mv flutter-apk/app-release.apk flutter-apk/beecount-${VERSION}.apk
             echo "Renamed APK to: beecount-${VERSION}.apk"
           fi
           # 重命名 AAB
