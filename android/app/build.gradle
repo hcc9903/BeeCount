@@ -39,22 +39,21 @@ android {
         targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-    // 当未在命令行指定 --flavor 时，默认选择 dev 风味，避免 Flutter 调试找不到 APK。
-    missingDimensionStrategy "env", "dev"
     }
 
-    flavorDimensions += ["env"]
-    productFlavors {
-        dev {
-            dimension "env"
-            applicationIdSuffix ".dev"
-            resValue "string", "app_name", "蜜蜂记账测试版"
-        }
-        prod {
-            dimension "env"
-            resValue "string", "app_name", "蜜蜂记账"
-        }
-    }
+    // 注：如需使用 flavor，取消注释以下配置
+    // flavorDimensions += ["env"]
+    // productFlavors {
+    //     dev {
+    //         dimension "env"
+    //         applicationIdSuffix ".dev"
+    //         resValue "string", "app_name", "蜜蜂记账测试版"
+    //     }
+    //     prod {
+    //         dimension "env"
+    //         resValue "string", "app_name", "蜜蜂记账"
+    //     }
+    // }
 
     signingConfigs {
         release {
@@ -136,19 +135,36 @@ android {
         }
     }
 
-    variantFilter { variant ->
-        def names = variant.flavors*.name
-        // Debug 模式下忽略非 dev 变体（即忽略 prodDebug）
-        if (variant.buildType.name == 'debug') {
-            if (!names.contains('dev')) {
-                setIgnore(true)
-            }
-        }
-        // Release 模式下忽略非 prod 变体（即忽略 devRelease）
-        if (variant.buildType.name == 'release') {
-            if (!names.contains('prod')) {
-                setIgnore(true)
-            }
+    // 注：当使用 flavor 时启用以下变体过滤
+    // variantFilter { variant ->
+    //     def names = variant.flavors*.name
+    //     if (variant.buildType.name == 'debug') {
+    //         if (!names.contains('dev')) {
+    //             setIgnore(true)
+    //         }
+    //     }
+    //     if (variant.buildType.name == 'release') {
+    //         if (!names.contains('prod')) {
+    //             setIgnore(true)
+    //         }
+    //     }
+    // }
+    
+    // 确保所有变体都生成 APK 文件
+    packagingOptions {
+        pickFirst '**/libjsc.so'
+        pickFirst '**/libc++_shared.so'
+    }
+}
+
+// 统一输出文件名
+android.applicationVariants.all { variant ->
+    variant.outputs.all { output ->
+        def buildType = variant.buildType.name
+        if (buildType == 'debug') {
+            outputFileName = "app-debug.apk"
+        } else if (buildType == 'release') {
+            outputFileName = "app-release.apk"
         }
     }
 }
