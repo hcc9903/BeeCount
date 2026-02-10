@@ -14,7 +14,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.tntlikely.beecount"
-    compileSdk = 35
+    compileSdk = 36
     // Keep in sync with plugins' required NDK to avoid build warnings/errors.
     ndkVersion = "28.2.13676358"
 
