@@ -54,6 +54,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: [check-branch]
     if: always() && (needs.check-branch.result == 'success' || github.event_name == 'push')
+    env:
+      GRADLE_OPTS: "-Xmx6g -XX:MaxMetaspaceSize=4g -XX:+HeapDumpOnOutOfMemoryError"
+      _JAVA_OPTIONS: "-Xmx6g"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -197,8 +200,8 @@ jobs:
           VERSION="${{ steps.meta.outputs.tag_name }}"
           cd build/app/outputs
           # 重命名 APK
-        if [ -f flutter-apk/app-release.apk ]; then  
-            mv flutter-apk/app-release.apk flutter-apk/beecount-${VERSION}.apk  
+          if [ -f flutter-apk/app-prod-release.apk ]; then
+            mv flutter-apk/app-prod-release.apk flutter-apk/beecount-${VERSION}.apk
             echo "Renamed APK to: beecount-${VERSION}.apk"
           fi
           # 重命名 AAB
