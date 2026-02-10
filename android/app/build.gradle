@@ -14,7 +14,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.tntlikely.beecount"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 35
     // Keep in sync with plugins' required NDK to avoid build warnings/errors.
     ndkVersion = "28.2.13676358"
 
@@ -36,7 +36,7 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 23  // Required by record_android for voice recording
-        targetSdk = flutter.targetSdkVersion
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     // 当未在命令行指定 --flavor 时，默认选择 dev 风味，避免 Flutter 调试找不到 APK。
@@ -136,40 +136,11 @@ android {
         }
     }
 
-    // 当存在 flavors 时，assembleDebug 会聚合构建所有 debug 变体（devDebug、prodDebug），
-    // 这会让 Flutter 工具无法确定唯一 APK 路径。这里忽略 prodDebug，仅保留 devDebug，
-    // 从而让不带 --flavor 的 `flutter run` 正常工作并默认使用 dev。
-    variantFilter { variant ->
-        def names = variant.flavors*.name
-        // 在 Debug 模式下忽略 prod 变体，仅保留 devDebug
-        if (variant.buildType.name == 'debug' && names.contains('prod')) {
-            setIgnore(true)
-        }
-        // 在 Release 模式下忽略 dev 变体，仅保留 prodRelease
-        if (variant.buildType.name == 'release' && names.contains('dev')) {
-            setIgnore(true)
-        }
-    }
 }
 
-// 自定义 Release APK 命名：app-<flavor>-release-v<versionName>(<versionCode>).apk
-/*
-android.applicationVariants.all { variant ->
-    if (variant.buildType.name == 'release') {
-        variant.outputs.all { output ->
-            def flavor = variant.flavorName ?: ""
-            def vName = variant.versionName
-            def vCode = variant.versionCode
-            def baseName = "app-${flavor}-release-v${vName}(${vCode}).apk"
-            try {
-                output.outputFileName = baseName
-            } catch (ignored) {
-                // For newer AGP where outputFileName setter may differ, ignore silently
-            }
-        }
-    }
+flutter {
+    source = "../.."
 }
-*/
 
 flutter {
     source = "../.."
