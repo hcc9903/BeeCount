@@ -5,10 +5,11 @@ allprojects {
     }
 }
 
-rootProject.buildDir = "../build"
-subprojects {
-    project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
+// 恢复默认路径管理，解决新版 AGP 路径映射问题
+// rootProject.buildDir = "../build"
+// subprojects {
+//     project.buildDir = "${rootProject.buildDir}/${project.name}"
+// }
 subprojects {
     project.evaluationDependsOn(":app")
 }

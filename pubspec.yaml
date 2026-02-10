@@ -92,6 +92,9 @@ dependency_overrides:
   record_platform_interface: 1.2.0
   # Fix image_cropper compatibility with Flutter 3.27.3
   image_cropper_platform_interface: 7.1.0
+  # Fix _fe_analyzer_shared version conflict in CI
+  _fe_analyzer_shared: ^85.0.0
+  analyzer: ^7.7.1
 
 flutter_launcher_icons:
   android: true
