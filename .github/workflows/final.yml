@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GRADLE_OPTS: "-Xmx6g -XX:MaxMetaspaceSize=4g -XX:+HeapDumpOnOutOfMemoryError"
+      _JAVA_OPTIONS: "-Xmx6g"
     steps:
       - uses: actions/checkout@v4
 
@@ -25,8 +28,10 @@ jobs:
       # 3. 🛠️ 强力手术：修复所有已知的代码和配置坑
       - name: Run Intensive Surgery
         run: |
-          # A. 修正 NDK 版本
-          sed -i '/android {/a \    ndkVersion = "28.2.13676358"' android/app/build.gradle
+          # A. 修正 NDK 版本（如果不存在则添加）
+          if ! grep -q "ndkVersion" android/app/build.gradle; then
+            sed -i '/android {/a \    ndkVersion = "28.2.13676358"' android/app/build.gradle
+          fi
           
           # B. 修正翻译文件中的类型冲突 (把所有 int/String 强转为 Object)
           find . -name "*.arb" -exec sed -i 's/"type": "[^"]*"/"type": "Object"/g' {} +
