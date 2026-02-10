@@ -46,11 +46,11 @@ jobs:
           flutter pub add intl:^0.20.2
           flutter pub upgrade
 
-      # 5. 正式打包 (不带那个报错的 --no-sound 参数)
+      # 5. 正式打包 (Release 模式)
       - name: Build APK
         run: |
           flutter pub get
-          flutter build apk --debug
+          flutter build apk --release
 
       # 6. 全盘搜寻并上传 APK
       - name: Upload APK
